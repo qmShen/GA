@@ -1,0 +1,57 @@
+\section{Discussion}
+\label{sec:discuss}
+
+\gaia{} is the first declarative grammar for animated infographics, which provides capabilities of flexible expression and reusability.
+In this section, we discuss the design considerations, possible usages and limitations of \gaia{}.
+
+\subsection{Cognitive Dimension}
+The design of \gaia{} takes into account the Cognitive Dimension~\cite{blackwell2001cognitive}.
+First, a user might act in different roles when using \gaia{} (as we mentioned in \autoref{sec:workflow}), so the consistency of the grammar is a concern.
+\gaia{} uses the same grammar for both animation and template.
+Consistent with the findings in the user study, this significantly reduces the cost of creating and using a template.
+Besides, the tree-like spec logic for animations and target types is similar. 
+Keeping some attributes consistent, such as ref, also promotes understanding.
+Second, the nesting animation of \gaia{} provides a progressive learning style and supports \aniunit{} level evaluation. 
+For \aniclass{} authoring, users can design a simple animation first, and then gradually add more details, each time the \aniunit{} can be evaluated immediately.
+In user studies, most participants use this approach, reviewing the results as they make changes.
+Third, users have the freedom to control their work steps. 
+For a complex animation, users can break it down into multiple specs (\aniclass{}). 
+Each spec can be evaluated individually and referred by a top-level animation so that the entire project can be completed incrementally, as stated in E1's feedback.
+
+\subsection{Trade-off of Target Abstraction}
+\gaia{} decouples the infographics creating and animation designing and employs a virtual layer for reusability.
+However, users need to clarify the target type and understand the virtual model before designing animations, which might require more effort in some cases.
+We determined that although the virtual layer introduces extra learning costs and usage burdens, these are outweighed by the convenience of reusing templates from professional designers, which is a relatively harder part compared to declaring the types.
+In addition, virtual target models bring expert-designed animations from one instance to a class of instances, helping to express, encapsulate, and transfer domain knowledge, creating a more prosperous community environment.
+As another insight, the design of the virtual target model (\eg list in \gaia{}) can be used to eliminate the complexity of real structures (as P6 said).
+Finally, in the case study, we also show that \gaia{} can fall back to the original SVG structure when the virtual layer is not needed. 
+
+\subsection{Potential Usages}
+\gaia{} has the potential to be used in many more scenarios.
+\gaia{} is a high-level spec that can be easily read or written directly, but it can also be used as a part of interactive tools for animated infographics authoring (E2, E3). 
+Benefiting from the reusability of \gaia{}, beginners will be able to design professional animations faster and their designs can also contribute to the tools' ecosystems.
+Even without exposing the reuse concept to the user, tools can take advantage of \gaia{}'s expressiveness and animation library to get the job done.
+Furthermore, \gaia{} offers a well-organized format for representing both infographic instances and animations, which can obtain benefits from generative AI models. 
+For instance, tools can incorporate AI to aid in animation creation with \gaia{} as an abstraction layer (E2), swiftly beginning with blank projects or carrying out design completion. 
+It can even be employed to construct end-to-end generation tools for animated infographics, which is our ultimate objective and further work.
+For now, the prototype of \gaia{} has already been used in some research projects for animated infographics authoring and attracted some enterprise engineers for further cooperation.
+
+\subsection{Debugging}
+Debugging declarative grammar is challenging~\cite{satyanarayan2015reactive}, and \gaia{} is no exception.
+This issue is also mentioned by some participants in the user study.
+With our experience working with downstream users, problems (\eg wrong syntax, empty selection and wrong parameters), will consume a lot of energy.
+We implemented \gaia{} with these issues in mind, providing a complete logging system and error-handling flow. 
+In addition, information related to the animation logic (such as selected elements, final animation structure, computed durations of each animation) can be obtained by the resolved animation object to facilitate debugging. 
+It can also be used by developers of upper-level tools for visual animation and debugging.
+Even so, we found that new users of \gaia{} still often ran into problems and struggled to get effective tips for changes. 
+Smoothing the development pipeline and debugging approaches for \gaia{} is a direction worthy of further study.
+
+\subsection{Limitation and New Opportunities}
+\gaia{} introduces the target abstraction, then decouples the work for creators, designers and developers.
+However, this workflow has not been fully validated.
+The evaluation of expressivity is also demonstrated through the repetition of examples, rather than through the animation result implemented by professional designers.
+In addition, we did not go into depth and validate the design of the target type spec and binder spec.
+P5 mentioned the generalization of target types and corresponding templates can be further explored.
+In expert interviews, E2 shared his experience in creating generic templates, but further research was lacking.
+In addition, P5 also asked whether binder specs can be generated automatically or type binding can be done interactively.
+These are the directions that can be further studied in the future.

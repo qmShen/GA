@@ -1,0 +1,22 @@
+\section{Motivation and Design Considerations}
+\label{sec:motivation}
+
+% [18, 55] katika crowdsourcing community-based approaches
+
+\gaia{} is a high-level declarative language that enables rapid specification of animated infographics.
+Taking a static SVG as input, \gaia{} compiler generates a playable animated infographics instance according to the \gaia{} specification.
+As mentioned in \autoref{sec:intro}, \gaia{} is designed to be expressive, reusable, and extensible.
+Inspired by Katita~\cite{jahanlou2022katika}, animations in \gaia{} are also treated as \textit{independent entity} and can be reused in one instance or across different instances (\ie artworks in Katika).
+Following the design of Gemini~\cite{kim2020gemini} and Canis~\cite{ge2020canis}, \gaia{} \textbf{manage animations in a hierarchical structure}, providing constraints that describe the relationship between animations.
+
+Such an animation structure allows some composite animation designs (\eg the animation of ) to be reused within a single instance, but not between different instances.
+Because the internal structure and elements of infographics vary from instance to instance.
+Unlike some interactive tools (\eg Katika), the input SVG of \gaia{} can be created by any upstream tools (like D3~\cite{bostock2011d3}, Vega-Lite~\cite{satyanarayan2016vega}, Adobe Illustrator ~\cite{AdobeAI}, \etcns).
+Canis provides a possible solution to bind roles to elements: set ids, classes, and data to SVG elements and generate dSVG.
+
+This motivates us to design a \textbf{tree-like target abstraction} for \gaia{}.
+
+
+Then unstructured SVGs need to be mapped to the target abstraction to enable reusability.
+
+To sum up, 

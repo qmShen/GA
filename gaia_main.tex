@@ -1,0 +1,196 @@
+%\documentclass[journal]{vgtc}                     % final (journal style)
+%\documentclass[journal,hideappendix]{vgtc}        % final (journal style) without appendices
+\documentclass[review,journal]{vgtc}              % review (journal style)
+%\documentclass[review,journal,hideappendix]{vgtc} % review (journal style)
+%\documentclass[widereview]{vgtc}                  % wide-spaced review
+%\documentclass[preprint,journal]{vgtc}            % preprint (journal style)
+
+
+%% Uncomment one of the lines above depending on where your paper is
+%% in the conference process. ``review'' and ``widereview'' are for review
+%% submission, ``preprint'' is for pre-publication in an open access repository,
+%% and the final version doesn't use a specific qualifier.
+
+%% If you are submitting a paper to a conference for review with a double
+%% blind reviewing process, please use one of the ``review'' options and replace the value ``0'' below with your
+%% OnlineID. Otherwise, you may safely leave it at ``0''.
+\onlineid{0}
+
+%% In preprint mode you may define your own headline. If not, the default IEEE copyright message will appear in preprint mode.
+%\preprinttext{To appear in IEEE Transactions on Visualization and Computer Graphics.}
+
+%% In preprint mode, this adds a link to the version of the paper on IEEEXplore
+%% Uncomment this line when you produce a preprint version of the article 
+%% after the article receives a DOI for the paper from IEEE
+%\ieeedoi{xx.xxxx/TVCG.201x.xxxxxxx}
+
+%% declare the category of your paper, only shown in review mode
+\vgtccategory{Research}
+
+%% please declare the paper type of your paper to help reviewers, only shown in review mode
+%% choices:
+%% * algorithm/technique
+%% * application/design study
+%% * evaluation
+%% * system
+%% * theory/model
+\vgtcpapertype{please specify}
+
+%% Paper title.
+\title{\gaia{}: A Grammar for Animated Infographics}
+
+%% Author ORCID IDs should be specified using \authororcid like below inside
+%% of the \author command. ORCID IDs can be registered at https://orcid.org/.
+%% Include only the 16-digit dashed ID.
+\author{%
+  \authororcid{Josiah S.\ Carberry}{0000-0002-1825-0097},
+  Ed Grimley, and 
+  Martha Stewart
+}
+
+\authorfooter{
+  %% insert punctuation at end of each item
+  \item
+  	Josiah Carberry is with Brown University.
+  	E-mail: jcarberry@example.com
+  \item
+  	Ed Grimley is with Grimley Widgets, Inc.
+  	E-mail: ed.grimley@example.com.
+
+  \item Martha Stewart is with Martha Stewart Enterprises at Microsoft
+  Research.
+  	E-mail: martha.stewart@example.com.
+}
+
+%% Abstract section.
+\abstract{%
+  Animated infographics are a potent storytelling tool in various fields, from business to science communication. However, their creation is often laborious, involving meticulous element selection, property adjustments, and timing management.
+  % Gaia
+  Therefore, we propose \gaia{}, a declarative grammar designed to streamline animated infographic creation.
+  With \gaia{}, users can craft animations expressively and intuitively, abstracting away the underlying implementation.
+  Via an abstraction of animated targets, \gaia{} provides an approach to express, save and share infographic animations from expert designers and allows novices to reuse them, significantly speeding up the creation process.
+  % Evaluation
+  We implemented a componentized \gaia{} compiler prototype and built a demo system based on it with diverse examples to showcase its usability.
+  In a user study involving non-expert participants, individuals with no prior animation experience successfully replicated real-world animations within just one hour of learning.
+  \gaia{} has been applied in several practical projects, further advancing the field of animated infographic authoring.
+}
+
+%% Keywords that describe your work. Will show as 'Index Terms' in journal
+%% please capitalize first letter and insert punctuation after last keyword
+\keywords{Infographics, animation, declarative language}
+
+%% A teaser figure can be included as follows
+%\teaser{
+%  \centering
+%  \includegraphics[width=\linewidth]{CypressView}
+%  \caption{%
+%  	In the Clouds: Vancouver from Cypress Mountain.
+%  	Note that the teaser may not be wider than the abstract block.%
+%  }
+%  \label{fig:teaser}
+%}
+
+%% Uncomment below to disable the manuscript note
+%\renewcommand{\manuscriptnotetxt}{}
+
+%% Copyright space is enabled by default as required by guidelines.
+%% It is disabled by the 'review' option or via the following command:
+%\nocopyrightspace
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% LOAD PACKAGES %%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Tell graphicx where to find files for figures when calling \includegraphics.
+%% Note that due to the \DeclareGraphicsExtensions{} call it is no longer necessary
+%% to provide the the path and extension of a graphics file:
+%% \includegraphics{diamondrule} is completely sufficient.
+\graphicspath{{figs/}{figures/}{pictures/}{images/}{./}} % where to search for the images
+
+%% Only used in the template examples. You can remove these lines.
+\usepackage{tabu}                      % only used for the table example
+\usepackage{booktabs}                  % only used for the table example
+\usepackage{lipsum}                    % used to generate placeholder text
+\usepackage{mwe}                       % used to generate placeholder figures
+
+%\usepackage{tikz,lipsum,lmodern}
+%\usepackage[most]{tcolorbox}
+%\usepackage[bookmarksnumbered,unicode]{hyperref}
+%% We encourage the use of mathptmx for consistent usage of times font
+%% throughout the proceedings. However, if you encounter conflicts
+%% with other math-related packages, you may want to disable it.
+\usepackage{mathptmx}                  % use matching math font
+
+%Setups
+
+\newcommand{\gaia}{{\textsc{Gaia}}}
+
+\newcommand{\eg}{{\it e.g.,\ }}
+\newcommand{\etal}{{\it et al.\ }}
+\newcommand{\etc}{{\it etc.}~}
+\newcommand{\etcns}{{\it etc.}}
+\newcommand{\ie}{{\it i.e.,\ }}
+
+% \definecolor{bluecrayola}{rgb}{0.12,0.46,1.0}
+% \newcommand{\revise}[1]{{\color{bluecrayola} #1}}
+% \newcommand{\review}[1]{\textcolor{purple}{[#1] }}
+
+%\definecolor{bluecrayola}{rgb}{0.12,0.46,1.0}
+\newcommand{\todo}[1]{{\color{bluecrayola} #1}}
+
+% keywards
+\newcommand{\aniclass}{{\textit{AniClass}}}
+\newcommand{\aniunit}{{\textit{AniUnit}}}
+\newcommand{\code}[1]{{\texttt{#1}}}
+
+
+\newcommand{\squishlist}{
+	\begin{list}{$\bullet$}
+		{ \setlength{\itemsep}{0pt}
+			\setlength{\parsep}{1pt}
+			\setlength{\topsep}{1pt}
+			\setlength{\partopsep}{0pt}
+			\setlength{\leftmargin}{1.6em}
+			\setlength{\labelwidth}{1em}
+			\setlength{\labelsep}{0.6em}
+		}
+	}
+	\newcommand{\squishend}{
+	\end{list}
+}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% START OF THE PAPER %%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% The ``\maketitle'' command must be the first command after the
+%% ``\begin{document}'' command. It prepares and prints the title block.
+%% the only exception to this rule is the \firstsection command
+%\firstsection{Introduction}
+
+\maketitle
+
+
+\input{sections/01_intro}
+\input{sections/02_related}
+% \input{sections/03_motivation}
+\input{sections/04_gaia_ani}
+\input{sections/05_gaia_reuse}
+\input{sections/07_workflow}
+\input{sections/09_eval}
+\input{sections/10_discuss}
+\input{sections/11_conclusion}
+
+\bibliographystyle{abbrv-doi-hyperref}
+%\bibliographystyle{abbrv-doi-hyperref-narrow}
+%\bibliographystyle{abbrv-doi}
+%\bibliographystyle{abbrv-doi-narrow}
+
+\bibliography{main}
+
+\end{document}
+

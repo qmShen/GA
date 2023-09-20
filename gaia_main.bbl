@@ -1,0 +1,245 @@
+\begin{thebibliography}{10}
+
+\bibitem{AdobeAE}
+Adobe after effects, 2023.
+
+\bibitem{AdobeAI}
+Adobe illustrator, 2023.
+
+\bibitem{howlong}
+The animation process – complete step by step guide, 2023.
+
+\bibitem{flourish}
+Flourish | data visualization \& storytelling, 2023.
+
+\bibitem{gganimate}
+A grammar of animated graphics | gganimate, 2023.
+
+\bibitem{json-schema-org}
+Json schema.
+\newblock \url{https://json-schema.org}, 2023.
+
+\bibitem{msppt}
+Microsoft powerpoint slide presentation software, 2023.
+
+\bibitem{processing}
+Processing.org, 2023.
+
+\bibitem{amini2016authoring}
+F.~Amini, N.~H. Riche, B.~Lee, A.~Monroy-Hernandez, and P.~Irani.
+\newblock Authoring data-driven videos with dataclips.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  23(1):501--510, 2016.
+
+\bibitem{bateman2010useful}
+S.~Bateman, R.~L. Mandryk, C.~Gutwin, A.~Genest, D.~McDine, and C.~Brooks.
+\newblock Useful junk? the effects of visual embellishment on comprehension and
+  memorability of charts.
+\newblock In {\em Proceedings of the SIGCHI conference on human factors in
+  computing systems}, pp. 2573--2582, 2010.
+
+\bibitem{blackwell2001cognitive}
+A.~F. Blackwell, C.~Britton, A.~Cox, T.~R. Green, C.~Gurr, G.~Kadoda, M.~S.
+  Kutar, M.~Loomes, C.~L. Nehaniv, M.~Petre, et~al.
+\newblock Cognitive dimensions of notations: Design tools for cognitive
+  technology.
+\newblock In {\em Cognitive Technology: Instruments of Mind: 4th International
+  Conference, CT 2001 Coventry, UK, August 6--9, 2001 Proceedings}, pp.
+  325--341. Springer, 2001.
+
+\bibitem{blazer2019animated}
+L.~Blazer.
+\newblock {\em Animated Storytelling}.
+\newblock Peachpit Press, 2019.
+
+\bibitem{borkin2013makes}
+M.~A. Borkin, A.~A. Vo, Z.~Bylinskii, P.~Isola, S.~Sunkavalli, A.~Oliva, and
+  H.~Pfister.
+\newblock What makes a visualization memorable?
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  19(12):2306--2315, 2013.
+
+\bibitem{bostock2011d3}
+M.~Bostock, V.~Ogievetsky, and J.~Heer.
+\newblock D$^3$ data-driven documents.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  17(12):2301--2309, 2011.
+
+\bibitem{brehmer2016timelines}
+M.~Brehmer, B.~Lee, B.~Bach, N.~H. Riche, and T.~Munzner.
+\newblock Timelines revisited: A design space and considerations for expressive
+  storytelling.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  23(9):2151--2164, 2016.
+
+\bibitem{cheng2022investigating}
+H.~Cheng, J.~Wang, Y.~Wang, B.~Lee, H.~Zhang, and D.~Zhang.
+\newblock Investigating the role and interplay of narrations and animations in
+  data videos.
+\newblock In {\em Computer Graphics Forum}, vol.~41, pp. 527--539. Wiley Online
+  Library, 2022.
+
+\bibitem{cui2021mixed}
+W.~Cui, J.~Wang, H.~Huang, Y.~Wang, C.-Y. Lin, H.~Zhang, and D.~Zhang.
+\newblock A mixed-initiative approach to reusing infographic charts.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
+  28(1):173--183, 2021.
+
+\bibitem{ge2021cast}
+T.~Ge, B.~Lee, and Y.~Wang.
+\newblock Cast: Authoring data-driven chart animations.
+\newblock In {\em Proceedings of the 2021 CHI Conference on Human Factors in
+  Computing Systems}, pp. 1--15, 2021.
+
+\bibitem{ge2020canis}
+T.~Ge, Y.~Zhao, B.~Lee, D.~Ren, B.~Chen, and Y.~Wang.
+\newblock Canis: A high-level language for data-driven chart animations.
+\newblock In {\em Computer Graphics Forum}, vol.~39, pp. 607--617. Wiley Online
+  Library, 2020.
+
+\bibitem{grammel2013survey}
+L.~Grammel, C.~Bennett, M.~Tory, and M.-A.~D. Storey.
+\newblock A survey of visualization construction user interfaces.
+\newblock In {\em EuroVis (Short Papers)}, pp. 019--023, 2013.
+
+\bibitem{haroz2015isotype}
+S.~Haroz, R.~Kosara, and S.~L. Franconeri.
+\newblock Isotype visualization: Working memory, performance, and engagement
+  with pictographs.
+\newblock In {\em Proceedings of the 33rd annual ACM conference on human
+  factors in computing systems}, pp. 1191--1200, 2015.
+
+\bibitem{heer2010declarative}
+J.~Heer and M.~Bostock.
+\newblock Declarative language design for interactive visualization.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
+  16(6):1149--1156, 2010.
+
+\bibitem{hullman2013deeper}
+J.~Hullman, S.~Drucker, N.~H. Riche, B.~Lee, D.~Fisher, and E.~Adar.
+\newblock A deeper understanding of sequence in narrative visualization.
+\newblock {\em IEEE Transactions on visualization and computer graphics},
+  19(12):2406--2415, 2013.
+
+\bibitem{jahanlou2022katika}
+A.~Jahanlou and P.~K. Chilana.
+\newblock Katika: An end-to-end system for authoring amateur explainer motion
+  graphics videos.
+\newblock In {\em Proceedings of the 2022 CHI Conference on Human Factors in
+  Computing Systems}, pp. 1--14, 2022.
+
+\bibitem{jahanlou2020challenges}
+A.~Jahanlou, W.~Odom, and P.~Chilana.
+\newblock Challenges in getting started in motion graphic design: Perspectives
+  from casual and professional motion designers.
+\newblock In {\em Graphics Interface 2021}, 2020.
+
+\bibitem{kim2020gemini}
+Y.~Kim and J.~Heer.
+\newblock Gemini: A grammar and recommender system for animated transitions in
+  statistical graphics.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
+  27(2):485--494, 2020.
+
+\bibitem{kim2021gemini}
+Y.~Kim and J.~Heer.
+\newblock Gemini 2: Generating keyframe-oriented animated transitions between
+  statistical graphics.
+\newblock In {\em 2021 IEEE Visualization Conference (VIS)}, pp. 201--205.
+  IEEE, 2021.
+
+\bibitem{krasner2013motion}
+J.~Krasner.
+\newblock {\em Motion graphic design: applied history and aesthetics}.
+\newblock Taylor \& Francis, 2013.
+
+\bibitem{liu2018data}
+Z.~Liu, J.~Thompson, A.~Wilson, M.~Dontcheva, J.~Delorey, S.~Grigg, B.~Kerr,
+  and J.~Stasko.
+\newblock Data illustrator: Augmenting vector design tools with lazy data
+  binding for expressive visualization authoring.
+\newblock In {\em Proceedings of the 2018 CHI Conference on Human Factors in
+  Computing Systems}, pp. 1--13, 2018.
+
+\bibitem{lu2020exploring}
+M.~Lu, C.~Wang, J.~Lanir, N.~Zhao, H.~Pfister, D.~Cohen-Or, and H.~Huang.
+\newblock Exploring visual information flows in infographics.
+\newblock In {\em Proceedings of the 2020 CHI conference on human factors in
+  computing systems}, pp. 1--12, 2020.
+
+\bibitem{mcnutt2023nogrammar}
+A.~M. McNutt.
+\newblock No grammar to rule them all: A survey of json-style dsls for
+  visualization.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
+  29(1):160--170, 2023. \href{https://doi.org/10.1109/TVCG.2022.3209460}
+{doi: {{%
+10\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}1109\discretionary{/}{%
+}{/}TVCG\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}2022\hspace{.1pt}\discretionary{.}{%
+}{.}\hspace{.4pt}3209460}}}
+
+
+\bibitem{sarinastiti2016skill}
+W.~Sarinastiti, D.~Susanto, and R.~Mutammimah.
+\newblock Skill level animation technique on dental care motion graphic for
+  children.
+\newblock In {\em 2016 International Electronics Symposium (IES)}, pp.
+  389--394. IEEE, 2016.
+
+\bibitem{satyanarayan2015reactive}
+A.~Satyanarayan, R.~Russell, J.~Hoffswell, and J.~Heer.
+\newblock Reactive vega: A streaming dataflow architecture for declarative
+  interactive visualization.
+\newblock {\em IEEE transactions on visualization and computer graphics},
+  22(1):659--668, 2015.
+
+\bibitem{shen2023dataplayer}
+L.~Shen, Y.~Zhang, H.~Zhang, and Y.~Wang.
+\newblock Data player: Automatic generation of data videos with
+  narration-animation interplay.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics}, 9,
+  September 2023.
+\newblock To appear in Proc. IEEE VIS'23.
+
+\bibitem{shi2021communicating}
+Y.~Shi, X.~Lan, J.~Li, Z.~Li, and N.~Cao.
+\newblock Communicating with motion: A design space for animated visual
+  narratives in data videos.
+\newblock In {\em Proceedings of the 2021 CHI Conference on Human Factors in
+  Computing Systems}, pp. 1--13, 2021.
+
+\bibitem{thompson2020understanding}
+J.~Thompson, Z.~Liu, W.~Li, and J.~Stasko.
+\newblock Understanding the design space and authoring paradigms for animated
+  data graphics.
+\newblock In {\em Computer Graphics Forum}, vol.~39, pp. 207--218. Wiley Online
+  Library, 2020.
+
+\bibitem{thompson2021data}
+J.~R. Thompson, Z.~Liu, and J.~Stasko.
+\newblock Data animator: Authoring expressive animated data graphics.
+\newblock In {\em Proceedings of the 2021 CHI Conference on Human Factors in
+  Computing Systems}, pp. 1--18, 2021.
+
+\bibitem{wang2021animated}
+Y.~Wang, Y.~Gao, R.~Huang, W.~Cui, H.~Zhang, and D.~Zhang.
+\newblock Animated presentation of static infographics with infomotion.
+\newblock In {\em Computer Graphics Forum}, vol.~40, pp. 507--518. Wiley Online
+  Library, 2021.
+
+\bibitem{wang2019emotional}
+Y.~Wang, A.~Segal, R.~Klatzky, D.~F. Keefe, P.~Isenberg, J.~Hurtienne,
+  E.~Hornecker, T.~Dwyer, and S.~Barrass.
+\newblock An emotional response to the value of visualization.
+\newblock {\em IEEE computer graphics and applications}, 39(5):8--17, 2019.
+
+\bibitem{zong2022animated}
+J.~Zong, J.~Pollock, D.~Wootton, and A.~Satyanarayan.
+\newblock Animated vega-lite: Unifying animation with a grammar of interactive
+  graphics.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
+  29(1):149--159, 2022.
+
+\end{thebibliography}

@@ -1,0 +1,63 @@
+\section{Design Tasks of \gaia{}}
+\todo{I am thinking about removing this section.}
+
+% Infographics can be represented with vector graphics, like SVG files. 
+% Infographics of the same type, such as a bar chart, can exhibit significant variations in their internal SVG structures due to the usage of <g> elements.
+% This happens even for SVGs that look very similar.
+% However 
+% In spite of this diversity, infographics still share simiinglar patterns semantically.
+
+% \begin{enumerate}
+
+% \item \textbf{G1 Expressivity.}
+% Users can build complex animation easily via intuitive grammar with high expressive characteristics.
+% There is a trade-off between expressiveness and intuitiveness. 
+% The former requires language provides low-level operations, which increases the difficulty of writing and reading. 
+% This can be alleviated via encapsulation \cite{gganimate}.
+% Inspired by this idea, \gaia{} has an intuitive grammar without losing expressivity.
+
+% \item \textbf{G2 Reusability.}
+% Users can reuse animations across similar infographics instances or components, even though they might vary in structures or attributes.
+% This can avoid duplication of creation and accelerate the creation process.
+
+% \item \textbf{G3 Extensibility.}
+% Users can create new templates by composing existing templates without any concrete instance provided.
+
+% \end{enumerate}
+
+\gaia{} is designed to build animated infographics efficiently and accurately.
+Based on the goals introduced in \autoref{sec:intro}, we formalize the design task of \gaia{} as:
+
+\begin{enumerate}
+
+\item \textbf{T1 Provide intuitive high-level grammars for animation description (G1).}
+Some languages, like transition operators in D3, use low-level expressions to create animations. 
+Instead, \gaia{} is close to natural descriptive language and provides a high-level grammar that is independent of the underlying implementation.
+It is self-descriptive as well, i.e., “what you see is what you get”.
+
+\item \textbf{T2 Support hierarchical animation/template creation (G1).}
+Complex animations can be created by concatenating several sub-animations according to different schedule strategies, such as launching one by one. 
+Inspired by the composition design pattern in OOP, \gaia{} allows users to create such animation via composing other animations. 
+%This is also straightforward due to the hierarchy of infographics.
+
+\item \textbf{T3 Allow reusing animations across different instances (G1, G2).}
+An animation can be encapsulated as a template and be applicable across visualization instances. 
+For example, animations designed for bar chart should be applicable to various instances of bar charts. 
+In \gaia{}, animations and templates actually share the same grammar since an animation can be regarded as a template for a concrete animated instance.
+
+\item \textbf{T4 Enable parameterization of template usage (G2).}
+Templates can be customized so as to apply to similar or repeating components in one visualization instance. 
+For example, a common animation template for chart axis can be applied on both x-axis and y-axis in a bar chart instance with adjustment of target or parameters.
+
+\item \textbf{T5 Support template extension (G3).}
+Similar to animation creation, \gaia{} enables users to create templates by combining other templates. 
+However, it doesn’t require any concrete visualization instances. 
+Instead, \gaia{} provide a target abstraction for this task. 
+The new templates can be used as other existing templates.
+
+\item \textbf{T6 Provide modularity mechanism (G2, G3).}
+Due to the diversity of types of infographics and animations, conflicts will become a big issue while creating. 
+For instance, animations having the same name but designed for different target types may be used in one spec. 
+Hence, module abstraction is introduced to manage spec resources and make sure specs from different users can work well together.
+
+\end{enumerate}

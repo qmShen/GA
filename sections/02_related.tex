@@ -1,0 +1,93 @@
+\section{Related Work}
+
+In this section, we discuss previous work related to \gaia{} from 3 aspects: infographic and animation for infographics, visual animation authoring tools and programming approaches for animation authoring.
+
+\subsection{Infographic and Animation for Infographics}
+% infographics
+The number of work on infographics published in recent years has increased.
+Infographics combine a variety of data-encoded elements and embellishments, which can attract readers’ interests easily~\cite{bateman2010useful, haroz2015isotype, borkin2013makes, wang2019emotional}. % from InfoMotion [BMG∗10, HKF15, BVB∗13, WSK∗19]
+% hierarchy; Visual Information Organization
+Some existing researches attempt to understand infographics from semantic meanings of visual elements~\cite{lu2020exploring, wang2021animated}. 
+Lu \etal~\cite{lu2020exploring} gave a concept of visual information flow. They pointed out one infographic can contain multiple visual groups that share similarity. 
+These groups are laid out to follow a backbone and form a hierarchy of infographics naturally.
+Wang's work~\cite{wang2021animated} also illustrated this insight existed in a large range of real infographics.
+They named such groups as repeating units and pointed out that different visual elements in a group can have different roles semantically.
+% nested hierarchy
+Nested structure in the element hierarchy is common and can be easily created via some DSLs like D3~\cite{bostock2011d3} and Protovis~\cite{heer2010declarative}.
+In the work of Liu \etal~\cite{liu2018data}, visual elements are arranged by collections, which can be nested for organization.
+For example, some infographics contain several stacked bars, which form a multi-layered hierarchy: stacked bar groups and rectangles in each group.
+% relation to Gaia
+In \gaia{}, we follow the intuition of nested hierarchy in infographics to build an abstraction of animated targets. 
+
+% animated infographics
+Animated infographics are regarded as an efficient tool that can express an informative story using intuitive and attractive effects applied on visual elements~\cite{blazer2019animated, brehmer2016timelines}.
+Researchers have investigated a wide range of cases from the real world and conducted surveys for understanding and creation~\cite{wang2021animated, shi2021communicating}. 
+% InfoMotion
+By collecting animations of infographics from multiple sources, like PowerPoint templates and video sites, Wang \etal~\cite{wang2021animated} summarized the design space of animated infographics. 
+They claimed that effects can be applied to a group of elements, then be organized via three arrangement styles.
+\gaia{} borrows the primitives of timing arrangement and adapts them to animations with a more complex timeline.
+% Nan's survey
+Some other work focus on effects used in animations~\cite{shi2021communicating}.
+They derived animated visual narratives that fall into 8 categories of narrative strategies. 
+These work inspire the design of animations in \gaia{}, but with the type system, \gaia{} can design animations for a semantic group of elements by combining these primitive effects.
+
+\subsection{Visual Animation Authoring Tools}
+
+Creation of animated infographics is a challenging task~\cite{jahanlou2022katika, howlong}, so a few visual animation authoring tools are proposed.
+% Keyframe-based tools
+Keyframe-based tools, like Adobe After Effects~\cite{AdobeAE} and Data Animator~\cite{thompson2021data}, provided low-level operations for motion creation.
+They allow users to specify the properties of visual elements on each keyframe and create intermediate frames according to the easing function.
+Besides, it is time-consuming when creating or modifying visual properties and time settings on a set of marks.
+\gaia{} doesn't need to define keyframes. Instead, high-level grammar is employed for easy reading and writing.
+
+% Template-based
+Template-based tools, as another category, provide a set of preset templates to facilitate animation creation.
+PPT~\cite{msppt}, DataClips~\cite{amini2016authoring} and Flourish~\cite{flourish} fall into this category.
+In these tools, animations can be created intuitively and easily by applying templates on targeted elements instead of adjusting low-level properties. 
+However, most of them only provide a small number of effects and can't be extended, which limits their applicability. 
+Besides, their flexibility relies on pre-defined templates, thus are less expressive.
+As such, creating complex animations with them is difficult, even impossible.
+Data Player~\cite{shen2023dataplayer} interweaves data video authoring with narrations, providing a set of pre-designed animation presets.
+Katika~\cite{jahanlou2022katika} provides an end-to-end solution for creating animated graphics visually and also provides a motion library that can be extended by the community. 
+Although it simplifies the creation pipeline, Katika can only employ statics graphics (called artworks in Katika) from its own embedded library.
+% Gaia
+\gaia{} also uses a concept of templates and allows users to extend them smoothly.
+As a high-level grammar, \gaia{} and its compiler can be integrated as a part of interactive tools for animated infographics authoring.
+We refer interested readers to the survey on visualization authoring methods conducted by Grammel \etal~\cite{grammel2013survey}.
+
+\subsection{Programming Approaches for Animation Authoring}
+To create animation more accurately and easily, some designers prefer programming approaches, which can be categorized into low- and high-level languages.
+% low-level
+Low-level languages, such as processing~\cite{processing} and D3~\cite{bostock2011d3}, provide APIs for low-level operations that enable users to control the properties of animated targets directly.
+For example, D3 uses a transition operation that enables users to indicate what and how visual properties (\eg width and color) change on selected elements.
+Due to their high expressiveness, these languages have gained widespread use for creating custom and informative animations.
+However, they require users to have experience in graphic editions and animation creation, resulting in a steep learning curve. 
+Users need to specify when and how these properties change for every element in detail, which is non-intuitive and time-consuming for complex animations with many animated elements.
+
+% high-level
+High-level languages are typically preferred as they favor conciseness over expressiveness~\cite{mcnutt2023nogrammar}. 
+% json-based
+Some languages adopt JSON to express animations at a high level~\cite{zong2022animated, kim2020gemini, kim2021gemini, ge2020canis, ge2020canis, ge2021cast}. %[Animated Vega-Lite, Gemini, Gemini2, Canis, CAST, Lottie]
+Gemini and Gemini2~\cite{kim2020gemini, kim2021gemini} focus on transitions between two static visualizations. 
+Animated Vega-Lite~\cite{zong2022animated} is proposed for generating animations and binding logic for interactive graphics. 
+% hiding complexity
+With hiding under-layered mechanisms, some grammars describe animations as effects applied on selected elements, thus are more intuitive and concise compared to the low-level languages.
+For example, Canis and CAST~\cite{ge2020canis, ge2021cast} provide several basic pre-defined effects to create animation without setting the initial and end values of properties.
+Via grouping operation, they can bind effects to a set of marks with a given align strategy thus the number of animations defined can be reduced.
+While these languages create satisfied animations quickly with concise specifications, they focus on data-driven charts instead of infographics.
+Another language, gganimate~\cite{gganimate}, uses concise code to express animations.
+Similar to Canis, it also employs encapsulation of animations to hide the details.
+However, it is mainly designed to create transitions for a specific chart type and can only be used in the programming language R.
+
+% Gaia
+Inspired by these work, \gaia{} is designed with a JSON-style grammar that strikes a good balance between expressiveness and conciseness.
+% first difference
+\gaia{} is the first one who considers types in animation authoring.
+According to our insights, elements in an infographic have different types and form a hierarchy. 
+Exiting methods, like Canis, can only process groups of the same marks.
+Without awareness of types of animated targets, high-level languages can only provide generic and simple effects (such as fade and wipe in Canis, enter\_fade in gganimate), which makes spec verbose when creating complex animations.
+% second difference
+% Besides, pre-defined effects set in both Canis and gganimate are hard to extend.
+Besides, pre-defined effect sets of existing tools are hard to extend.
+McNutt~\cite{mcnutt2023nogrammar} pointed out the value of extensibility in DSLs, but none have provided a satisfactory solution for it in the field of animation creation.
+\gaia{} brings extensibility to this kind of grammar for the first time to create new animations or target types in a declarative way and enable reusing, which facilitates creation greatly.
