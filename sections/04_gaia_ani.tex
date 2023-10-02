@@ -44,7 +44,7 @@ The numbers shown on the bars are appeared through a zooming effect between 0.5s
 		\end{tabular} 
 	}
 	\label{tab:setting}
-	\vspace{-5mm}
+	\vspace{-3mm}
 \end{table} 
 %A \gaia{} animation spec (as we called \aniclass{}) describes the animation applied on a given infographic with several animation units (as we called \aniunit{}) and a set of setting attributes.
 %\autoref{fig:ani_spec}(A) shows an example of animation spec.
@@ -63,7 +63,7 @@ The numbers shown on the bars are appeared through a zooming effect between 0.5s
 %Other attributes of type \textit{Class} (line 2-4) address the reusability of \gaia{}, which will be discussed in \autoref{ssec:extend_template}.
 
 
-Given an infographic (using SVG as an example), \gaia{} employs \aniclass{} to dictate the animation of its visual elements. An \aniclass{} is composed of several setting attributes and animation units, termed as \aniunit{}s within Gaia. A detailed exposition of these setting attributes can be found in \autoref{tab:setting}. 
+Given an infographic (using SVG as an example), \gaia{} employs \aniclass{} to dictate the animation of its visual elements. Illustrate as \autoref{fig:ani_spec} (C), an \aniclass{} is composed of several setting attributes and animation units, termed as \aniunit{}s within Gaia (shown as \autoref{fig:ani_spec}(C)(0,1,2)). A detailed exposition of these setting attributes can be found in \autoref{tab:setting}. 
 These attributes outline the foundational information for animation specification. Users have the flexibility to explicitly incorporate libraries and their custom animations using the "package" and "import" attributes, respectively. Animation configurations can be defined via the "name," "targetType," and "params" attributes. Furthermore, the "main" attribute signifies the starting point of the animation.
 
 
@@ -91,7 +91,6 @@ The example shown in \autoref{fig:ani_spec}. The ``main'' attributes (line 5-19)
 
 %
 \begin{figure}[h]
-  \centering
   \includegraphics[width=\linewidth]{figs/ani_spec_ex_in_method.pdf}
   \caption{
   An example of \gaia{} animation specification. }																																																																																																																																																																																																																																																																																														
@@ -106,15 +105,15 @@ Formally, one \aniunit{} is an object that contains three types of attributes:
 $$
 AniUnit := \langle Target, Timing, Effect \rangle
 $$
-\textit{Target} (\autoref{ssec:gaia_ani_target}) declares the animated target.
+\textit{Target} (\autoref{ssec:gaia_ani_target}) declares the animated target with the detailed attributes are list in \autoref{tab:target}.
 Attribute \code{target} defines a list of transforms specifying how an \aniunit{} picks and reshapes targets from its parent.
 Attribute \code{groupBy} can only be used with \code{foreach} (introduced in \autoref{ssec:gaia_ani_effect}), grouping the selected elements and applying the effect to each group.
 \textit{Timing} (\autoref{ssec:gaia_ani_timing}) contains 4 attributes that describe the common timing settings of an animation.
 Attributes of type \textit{Effect} (\autoref{ssec:gaia_ani_effect}) describe how to perform the animation.
-One \aniunit{} can refer to an existing effect using \code{ref} (like line 8, 14 in \autoref{fig:ani_spec}(A)).
-Especially, \aniunit{} can be nested, using attributes \code{sync}/\code{concat}/\code{foreach}/\code{child} to combine child \aniunit{}s (like \code{sync} animation in \autoref{fig:ani_spec}(A)).
+One \aniunit{} can refer to an existing effect using \code{ref} (like line 8, 14 in \autoref{fig:ani_spec}(C)).
+Especially, \aniunit{} can be nested, using attributes \code{sync}/\code{concat}/\code{foreach}/\code{child} to combine child \aniunit{}s (like \code{sync} animation in \autoref{fig:ani_spec}(C)).
 Other animation-related parameters also fall into this category.
-\autoref{fig:ani_spec}(C) gives a full list of the attributes and provides some examples.
+%\autoref{fig:ani_spec}(C) gives a full list of the attributes and provides some examples.
 Strings started with symbol \code{\$} are placeholders for parameters, which will be discussed in \autoref{sec:gaia_reuse}.
 
 
@@ -134,7 +133,7 @@ Strings started with symbol \code{\$} are placeholders for parameters, which wil
 		\end{tabular}
 	}
 	\label{tab:target}
-	\vspace{-5mm}
+	\vspace{-1mm}
 \end{table}
 
 % Target attribute declared the animated target of \aniunit{}s. 
@@ -277,7 +276,7 @@ The library and reusability are the core of \gaia{}, as elaborated further in \a
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.95\linewidth]{figs/ani_unit_type.pdf}
+  \includegraphics[width=\linewidth]{figs/ani_unit_type.pdf}
   \caption{
     Examples for non-leaf \aniunit{}s (sync, concat, foreach, single-child) in \gaia{}.
   }

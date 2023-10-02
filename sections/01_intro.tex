@@ -27,16 +27,16 @@ The construction of animated infographics fundamentally comprises two primary st
 In the following stage, interactive tools such as Adobe After Effects~\cite{AdobeAE} are utilized to create animations. However, these tools only offer low-level operations like keyframes or interpolation for motion authoring, which requires a significant degree of expertise and time \cite{jahanlou2020challenges}. 
 %\qmpr{ Some designers might gravitate towards programming tools like D3~\cite{bostock2011d3} for the precision they offer in controlling property changes and organizing timelines through program flow.}{What's the benefits and disadvantage of D3?}
 In recent years, designers have shown a preference for declarative languages due to their succinctness, even if it sometimes comes at the cost of expressiveness \cite{mcnutt2023nogrammar}. Canis \cite{ge2020canis} falls into this category, offering a declarative language tailored for crafting animated charts. 
-\qmpr{These techniques simplify the creation process but can only use a predefined library of simple animations usually, which limits their usage}{Failed to clearly introduce the limitation of Canis}.
+%\qmpr{These techniques simplify the creation process but can only use a predefined library of simple animations usually, which limits their usage}{Failed to clearly introduce the limitation of Canis}.
 %\qmhl{Here, we introduce two examples to better illustrate the challenges of creating animated infographics with existing tools.}
-
+\qmhl{However, these methods are either designed for data-driven chats or lack flexibility for reuse across diverse infographics}
 
 % Examples
 
 \begin{figure*}[h]
   \centering
   \includegraphics[width=\linewidth]{figs/ani_example_tvcg.pdf}
-  \caption{(A) An animated infographic about the pretrial released defendants of the D.C. court in 2017 (retrieved from \url{https://youtu.be/5mhwDSHKEyM?t=215}). (B) An animated infographic about the relation between SAT score and family income (retrieved from \url{https://youtu.be/WjVVwMGJ9S8?t=334}). Similar animations are framed in blue. }
+  \caption{An animated infographic about the correlation between SAT score and family income which are retrieved from \url{https://youtu.be/WjVVwMGJ9S8?t=334}.}
 %  \Description{(A) An animated infographic about the pretrial released defendants of the D.C. court in 2017. (B) An animated infographic about the relation between SAT score and family income. Similar animations are framed in blue.}
   \label{fig:ani_example}
 \end{figure*}
@@ -51,15 +51,16 @@ In recent years, designers have shown a preference for declarative languages due
 %In each group, the bar enters using a Wipe effect (the mask is also required) and texts of the axis and the bar enter using CutIn.
 %The relative offsets, durations and easing functions for each animation are carefully set to produce a harmonious result.
 
-An example is shown in \autoref{fig:ani_example}(B). 
-Given a static SVG shown as the rightmost figure in \autoref{fig:ani_example}(B), five animations are added (B1-5).
-First, the chart framework enters at the beginning (B1) when the author explains this chart.
-Similarly, animations for each element should be handled one by one, using different effects depending on the element. 
-For example, the lines use the WipeIn effect, while the x-label on the left uses the CutIn effect. Increasing offsets are set for the x-axis labels to achieve the stagger effect.
-Following the narration, the bar and bar label for the category "less than \$20,000" enter (B2).
-A line and a label fade in to illustrate the average score (B3).
-Then, bars in the middle wipe in with a stagger (B4) to show a positive correlation.
-Finally, the corresponding bar and label for "More than \$200,000" are animated with similar effects (B5).
+An example is shown in \autoref{fig:ani_example}. 
+Given a static SVG, five animations (\circled{1}-\circled{5}) are added.
+First, the chart framework enters at the beginning when the author explains this chart (shown as \circled{1}) .
+Each element's animation is individually managed, employing varying effects tailored to the specific element.
+For example, the lines use the WipeIn effect, while the x-label on the left uses the CutIn effect. 
+Increasing offsets are set for the x-axis labels to achieve the stagger effect.
+Following the narration, the bar and bar label for the category ``less than \$20,000'' enter (shown as \circled{2}).
+A line and a label fade in to illustrate the average score (shown as \circled{3}).
+Then, bars in the middle wipe in with a stagger (shown as \circled{4}) to show a positive correlation.
+Finally, the corresponding bar and label for ``More than \$200,000'' are animated with similar effects (shown as \circled{5}).
 
 % Obstacles
 
