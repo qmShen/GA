@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.20)  2 OCT 2023 09:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.20)  26 SEP 2023 22:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -418,17 +418,17 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 (c:/texlive/2021/texmf-dist/tex/latex/xcolor/svgnam.def
 File: svgnam.def 2016/05/11 v2.12 Predefined colors according to SVG 1.1 (UK)
 ))
-Package hyperref Info: Option `pageanchor' set `true' on input line 166.
-Package hyperref Info: Option `plainpages' set `false' on input line 166.
-Package hyperref Info: Option `hypertexnames' set `false' on input line 166.
-Package hyperref Info: Option `bookmarksnumbered' set `false' on input line 166
+Package hyperref Info: Option `pageanchor' set `true' on input line 165.
+Package hyperref Info: Option `plainpages' set `false' on input line 165.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 165.
+Package hyperref Info: Option `bookmarksnumbered' set `false' on input line 165
 .
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 166.
-Package hyperref Info: Option `breaklinks' set `true' on input line 166.
-Package hyperref Info: Option `colorlinks' set `true' on input line 166.
-Package hyperref Info: Option `nesting' set `true' on input line 166.
-Package hyperref Info: Option `linktocpage' set `true' on input line 166.
-Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 166
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 165.
+Package hyperref Info: Option `breaklinks' set `true' on input line 165.
+Package hyperref Info: Option `colorlinks' set `true' on input line 165.
+Package hyperref Info: Option `nesting' set `true' on input line 165.
+Package hyperref Info: Option `linktocpage' set `true' on input line 165.
+Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 165
 .
 
 (c:/texlive/2021/texmf-dist/tex/latex/cleveref/cleveref.sty
@@ -811,31 +811,31 @@ Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
 \c@subtable=\count344
 )
 LaTeX Font Info:    Trying to load font information for T1+ptm on input line 16
-6.
+5.
 
 (c:/texlive/2021/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (./gaia_main.aux)
 \openout1 = `gaia_main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 165.
+LaTeX Font Info:    ... okay on input line 165.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 165.
+LaTeX Font Info:    ... okay on input line 165.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 165.
+LaTeX Font Info:    ... okay on input line 165.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 165.
+LaTeX Font Info:    ... okay on input line 165.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 165.
+LaTeX Font Info:    ... okay on input line 165.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 165.
+LaTeX Font Info:    ... okay on input line 165.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 165.
+LaTeX Font Info:    ... okay on input line 165.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 165.
+LaTeX Font Info:    ... okay on input line 165.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 165.
+LaTeX Font Info:    ... okay on input line 165.
 
 (c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -859,14 +859,14 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 166.
+LaTeX Info: Redefining \microtypecontext on input line 165.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 166.
+LaTeX Info: Redefining \showhyphens on input line 165.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -875,7 +875,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 \big@size=\dimen296
-Package hyperref Info: Link coloring ON on input line 166.
+Package hyperref Info: Link coloring ON on input line 165.
 
 (c:/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -888,9 +888,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count351
 )
-LaTeX Info: Redefining \ref on input line 166.
-LaTeX Info: Redefining \pageref on input line 166.
-LaTeX Info: Redefining \nameref on input line 166.
+LaTeX Info: Redefining \ref on input line 165.
+LaTeX Info: Redefining \pageref on input line 165.
+LaTeX Info: Redefining \nameref on input line 165.
 
 (./gaia_main.out) (./gaia_main.out)
 \@outlinefile=\write4
@@ -899,7 +899,7 @@ LaTeX Info: Redefining \nameref on input line 166.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Trying to load font information for T1+phv on input line 17
-8.
+7.
 
 (c:/texlive/2021/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
@@ -911,16 +911,16 @@ Package microtype Info: Loading generic protrusion settings for font family
 <diamondrule.pdf, id=147, 213.79875pt x 12.045pt>
 File: diamondrule.pdf Graphic file (type pdf)
 <use diamondrule.pdf>
-Package pdftex.def Info: diamondrule.pdf  used on input line 178.
+Package pdftex.def Info: diamondrule.pdf  used on input line 177.
 (pdftex.def)             Requested size: 213.79822pt x 12.04495pt.
  (./sections/01_intro.tex
-<figs/ani_example_tvcg.pdf, id=163, 825.0825pt x 327.2225pt>
-File: figs/ani_example_tvcg.pdf Graphic file (type pdf)
-<use figs/ani_example_tvcg.pdf>
-Package pdftex.def Info: figs/ani_example_tvcg.pdf  used on input line 37.
-(pdftex.def)             Requested size: 514.92374pt x 204.21896pt.
+<figs/ani_example.pdf, id=163, 882.29625pt x 511.9125pt>
+File: figs/ani_example.pdf Graphic file (type pdf)
+<use figs/ani_example.pdf>
+Package pdftex.def Info: figs/ani_example.pdf  used on input line 35.
+(pdftex.def)             Requested size: 514.92374pt x 298.76851pt.
 LaTeX Font Info:    Trying to load font information for T1+txtt on input line 3
-8.
+6.
 (c:/texlive/2021/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 )
@@ -929,7 +929,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 38.
+ 36.
 
 (c:/texlive/2021/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
@@ -939,43 +939,43 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 38.
+ 36.
 
 (c:/texlive/2021/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 38.
+ 36.
 
 (c:/texlive/2021/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 38.
+ 36.
 
 (c:/texlive/2021/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
-8.
+6.
 
 (c:/texlive/2021/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 86.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 84.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 86.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 84.
 
 Overfull \vbox (2.26305pt too high) has occurred while \output is active []
 
@@ -983,19 +983,20 @@ Overfull \vbox (2.26305pt too high) has occurred while \output is active []
 [1{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./diamondrule.pdf>]) (./sections/02_related.tex [2 <./figs/ani_example_tvcg.p
-df>])
+ <./diamondrule.pdf>]
+Underfull \vbox (badness 7221) has occurred while \output is active []
+
+)
+(./sections/02_related.tex [2 <./figs/ani_example.pdf>])
 (./sections/04_gaia_ani.tex
-
-LaTeX Warning: Reference `tab:setting' on page 3 undefined on input line 48.
-
-<figs/ani_spec.pdf, id=289, 1110.1475pt x 555.07375pt>
+<figs/ani_spec.pdf, id=295, 1110.1475pt x 555.07375pt>
 File: figs/ani_spec.pdf Graphic file (type pdf)
 <use figs/ani_spec.pdf>
-Package pdftex.def Info: figs/ani_spec.pdf  used on input line 63.
+Package pdftex.def Info: figs/ani_spec.pdf  used on input line 25.
 (pdftex.def)             Requested size: 251.31898pt x 125.65694pt.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 67.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 29.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1004,51 +1005,50 @@ Overfull \vbox (2.26305pt too high) has occurred while \output is active []
 
 
 [3]
-<figs/transform.pdf, id=317, 640.3925pt x 398.48875pt>
+<figs/transform.pdf, id=325, 967.615pt x 398.48875pt>
 File: figs/transform.pdf Graphic file (type pdf)
 <use figs/transform.pdf>
-Package pdftex.def Info: figs/transform.pdf  used on input line 107.
-(pdftex.def)             Requested size: 251.31898pt x 156.38286pt.
-<figs/ani_unit_type.pdf, id=329, 668.4975pt x 241.90375pt>
+Package pdftex.def Info: figs/transform.pdf  used on input line 69.
+(pdftex.def)             Requested size: 251.31898pt x 103.49518pt.
+<figs/ani_unit_type.pdf, id=337, 853.1875pt x 241.90375pt>
 File: figs/ani_unit_type.pdf Graphic file (type pdf)
 <use figs/ani_unit_type.pdf>
-Package pdftex.def Info: figs/ani_unit_type.pdf  used on input line 198.
-(pdftex.def)             Requested size: 226.18555pt x 81.84753pt.
+Package pdftex.def Info: figs/ani_unit_type.pdf  used on input line 160.
+(pdftex.def)             Requested size: 226.18555pt x 64.13002pt.
 ) (./sections/05_gaia_reuse.tex [4 <./figs/ani_spec.pdf> <./figs/transform.pdf>
  <./figs/ani_unit_type.pdf>]
-<figs/target_workflow.pdf, id=430, 569.12625pt x 511.9125pt>
+<figs/target_workflow.pdf, id=450, 910.40125pt x 370.38374pt>
 File: figs/target_workflow.pdf Graphic file (type pdf)
 <use figs/target_workflow.pdf>
 Package pdftex.def Info: figs/target_workflow.pdf  used on input line 41.
-(pdftex.def)             Requested size: 251.31898pt x 226.05455pt.
-<figs/target_type_spec.pdf, id=439, 583.17876pt x 285.065pt>
+(pdftex.def)             Requested size: 251.31898pt x 102.24297pt.
+<figs/target_type_spec.pdf, id=459, 882.29625pt x 313.17pt>
 File: figs/target_type_spec.pdf Graphic file (type pdf)
 <use figs/target_type_spec.pdf>
 Package pdftex.def Info: figs/target_type_spec.pdf  used on input line 66.
-(pdftex.def)             Requested size: 251.31898pt x 122.84523pt.
-
-Overfull \vbox (2.26305pt too high) has occurred while \output is active []
-
-
-[5 <./figs/target_workflow.pdf> <./figs/target_type_spec.pdf>]
-<figs/ani_hierarchy.pdf, id=520, 654.445pt x 640.3925pt>
+(pdftex.def)             Requested size: 251.31898pt x 89.20657pt.
+<figs/ani_hierarchy.pdf, id=464, 1195.46625pt x 370.38374pt>
 File: figs/ani_hierarchy.pdf Graphic file (type pdf)
 <use figs/ani_hierarchy.pdf>
 Package pdftex.def Info: figs/ani_hierarchy.pdf  used on input line 101.
-(pdftex.def)             Requested size: 251.31898pt x 245.9216pt.
-)
-(./sections/07_workflow.tex
-<figs/workflow.pdf, id=525, 853.1875pt x 370.38374pt>
-File: figs/workflow.pdf Graphic file (type pdf)
-<use figs/workflow.pdf>
-Package pdftex.def Info: figs/workflow.pdf  used on input line 8.
-(pdftex.def)             Requested size: 226.18555pt x 98.19078pt.
+(pdftex.def)             Requested size: 251.31898pt x 77.862pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+
+Overfull \vbox (2.26305pt too high) has occurred while \output is active []
+
+
+[5 <./figs/target_workflow.pdf> <./figs/target_type_spec.pdf>])
+(./sections/07_workflow.tex
+<figs/workflow.pdf, id=549, 853.1875pt x 370.38374pt>
+File: figs/workflow.pdf Graphic file (type pdf)
+<use figs/workflow.pdf>
+Package pdftex.def Info: figs/workflow.pdf  used on input line 8.
+(pdftex.def)             Requested size: 201.05595pt x 87.2832pt.
 ) (./sections/09_eval.tex [6 <./figs/ani_hierarchy.pdf> <./figs/workflow.pdf>]
-<figs/user_ratings.pdf, id=617, 441.54962pt x 111.7776pt>
+<figs/user_ratings.pdf, id=643, 441.54962pt x 111.7776pt>
 File: figs/user_ratings.pdf Graphic file (type pdf)
 <use figs/user_ratings.pdf>
 Package pdftex.def Info: figs/user_ratings.pdf  used on input line 83.
@@ -1057,7 +1057,7 @@ Package pdftex.def Info: figs/user_ratings.pdf  used on input line 83.
 Overfull \vbox (2.26305pt too high) has occurred while \output is active []
 
 
-[7]
+[7 <./figs/user_ratings.pdf>]
 
 LaTeX Font Warning: Font shape `T1/ptm/m/scit' undefined
 (Font)              using `T1/ptm/m/sc' instead on input line 119.
@@ -1086,8 +1086,8 @@ LaTeX Font Warning: Font shape `T1/ptm/m/scit' undefined
 LaTeX Font Warning: Font shape `T1/ptm/m/scit' undefined
 (Font)              using `T1/ptm/m/sc' instead on input line 161.
 
-[8 <./figs/user_ratings.pdf>]) (./sections/10_discuss.tex)
-(./sections/11_conclusion.tex) (./gaia_main.bbl (./gaia_main.brf)
+) (./sections/10_discuss.tex [8]) (./sections/11_conclusion.tex)
+(./gaia_main.bbl (./gaia_main.brf)
 \tf@brf=\write5
 \openout5 = `gaia_main.brf'.
 
@@ -1100,22 +1100,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ) [10]
 (./gaia_main.aux)
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `gaia_main.out' has not changed.
-(rerunfilecheck)             Checksum: 92A406D0DA2923F69C86396EDAF5CAA8;5733.
+(rerunfilecheck)             Checksum: 3EEEEA8E9E862E899DAD6F42473BD8AA;5744.
 Package rerunfilecheck Info: File `gaia_main.brf' has not changed.
-(rerunfilecheck)             Checksum: 6E239BC52BCDA6B787DCCDF62A9C31B2;3241.
+(rerunfilecheck)             Checksum: 32DE98C876F0763A9518EF5568A698CB;3241.
  ) 
 Here is how much of TeX's memory you used:
- 27651 strings out of 478542
- 509195 string characters out of 5854402
- 938534 words of memory out of 5000000
- 44254 multiletter control sequences out of 15000+600000
- 524521 words of font info for 573 fonts, out of 8000000 for 9000
+ 27648 strings out of 478542
+ 509135 string characters out of 5854402
+ 937154 words of memory out of 5000000
+ 44252 multiletter control sequences out of 15000+600000
+ 524513 words of font info for 572 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,8n,94p,646b,695s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 89i,8n,94p,568b,695s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2021/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/
@@ -1125,10 +1122,10 @@ fonts/t1xtt.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb
 21/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb><c:/texlive/2021/texmf-dist/
 fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/ti
 mes/utmr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gaia_main.pdf (10 pages, 1687811 bytes).
+Output written on gaia_main.pdf (10 pages, 1828232 bytes).
 PDF statistics:
- 806 PDF objects out of 1000 (max. 8388607)
- 609 compressed objects within 7 object streams
+ 829 PDF objects out of 1000 (max. 8388607)
+ 618 compressed objects within 7 object streams
  103 named destinations out of 1000 (max. 500000)
  102231 words of extra memory for PDF output out of 106986 (max. 10000000)
 

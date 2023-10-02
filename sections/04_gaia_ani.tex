@@ -1,24 +1,62 @@
 \section{The \gaia{} Grammar of Animation}
 \label{sec:gaia_ani}
 
-\gaia{} is a high-level declarative language that enables rapid specification of animated infographics.
-Taking one static SVG as input, \gaia{} compiler generates a playable animated infographic instance according to the \gaia{} specification.
-In this section, we introduce the basic grammar to declare an animation in \gaia{}.
+%\gaia{} is a high-level declarative language that enables rapid specification of animated infographics.
+%Taking one static SVG as input, \gaia{} compiler generates a playable animated infographic instance according to the \gaia{} specification.
+%In this section, we introduce the \gaia{} grammar \qmhl{with an simple example shown as \autoref{fig:ani_spec} (A).} 
+%This example demonstrate an animation of four elements: two values (40 and 50) and two bars indicating these two values with their height. The animation of this graphics is indicated by \autoref{fig:ani_spec} (B). The whole animation last fore 1.5 seconds shown as the first line. The bars extend vertically along the whole time range. The number shown on the top of the bars appears as a zoom manner during the time range betweewn 0.5s to 1.5s.
+%
+%\gaia{} is a high-level declarative language that enables rapid specification of animated infographics.
+%Taking one static SVG as input, \gaia{} compiler generates a playable animated infographic instance according to the \gaia{} specification.
+%In this section, we introduce the \gaia{} grammar \qmhl{with an simple example shown as \autoref{fig:ani_spec} (A).} 
+%This example demonstrate an animation of four elements: two values (40 and 50) and two bars indicating these two values with their height. The animation of this graphics is indicated by \autoref{fig:ani_spec} (B). The whole animation last fore 1.5 seconds shown as the first line. The bars extend vertically along the whole time range. The number shown on the top of the bars appears as a zoom manner during the time range betweewn 0.5s to 1.5s.
 
-\subsection{Animation Class and Unit}
+\gaia{} is a high-level declarative language designed for the rapid creation of animated infographics. 
+Given a static SVG as input, the \gaia{} compiler produces an animated infographic based on the \gaia{} specifications. 
+In this section, we present the grammar of \gaia{}, illustrated with a straightforward example in \autoref{fig:ani_spec} (A). 
+This example showcases an animation of four elements: two numerical values (40 and 50) and two bars that represent these values by their height. 
+The animation sequence can be observed in \autoref{fig:ani_spec} (B). 
+The entire animation spans 1.5 seconds, as indicated in the first line in \autoref{fig:ani_spec} (B). 
+Throughout this whole duration, the bars extend vertically. 
+The numbers shown on the bars are appeared through a zooming effect between 0.5s and 1.5s.
+
+
+
+
+
+
+\subsection{Animation Specification}
 \label{ssec:aniclass_aniunit}
 
-% \begin{tcolorbox}[colback=white!5!white,colframe=yellow!75!black,title=Example - Part 1]
-% \end{tcolorbox}
+%A \gaia{} animation spec (as we called \aniclass{}) describes the animation applied on a given infographic with several animation units (as we called \aniunit{}) and a set of setting attributes.
+%\autoref{fig:ani_spec}(A) shows an example of animation spec.
+%It contains 3 \aniunit{}s: Sync animation, Wipe animation of bars, and ZoomIn animation of the bar labels.
+%The animation created and the corresponding timeline are shown in \autoref{fig:ani_spec}(B).
+%To ease understanding, each attribute is associated with an attribute type given in \autoref{fig:ani_spec}(C).
+%Attribute \code{main} (line 5-19) defines the body of this animation, which contains a single \aniunit{}.
+%Other attributes of type \textit{Class} (line 2-4) address the reusability of \gaia{}, which will be discussed in \autoref{ssec:extend_template}.
 
-A \gaia{} animation spec (as we called \aniclass{}) describes the animation applied on a given infographic with several animation units (as we called \aniunit{}) and a set of settings.
-\autoref{fig:ani_spec}(A) shows an example of animation spec.
-It contains 3 \aniunit{}s: Sync animation, Wipe animation of bars, and ZoomIn animation of the bar labels.
-The animation created and the corresponding timeline are shown in \autoref{fig:ani_spec}(B).
-To ease understanding, each attribute is associated with an attribute type given in \autoref{fig:ani_spec}(C).
-Attribute \code{main} (line 5-19) defines the body of this animation, which contains a single \aniunit{}.
-Other attributes of type \textit{Class} (line 2-4) address the reusability of \gaia{}, which will be discussed in \autoref{ssec:extend_template}.
+%A \gaia{} animation spec (as we called \aniclass{}) describes the animation applied on a given infographic with several animation units (as we called \aniunit{}) and a set of setting attributes.
+%\autoref{fig:ani_spec}(A) shows an example of animation spec.
+%It contains 3 \aniunit{}s: Sync animation, Wipe animation of bars, and ZoomIn animation of the bar labels.
+%The animation created and the corresponding timeline are shown in \autoref{fig:ani_spec}(B).
+%To ease understanding, each attribute is associated with an attribute type given in \autoref{fig:ani_spec}(C).
+%Attribute \code{main} (line 5-19) defines the body of this animation, which contains a single \aniunit{}.
+%Other attributes of type \textit{Class} (line 2-4) address the reusability of \gaia{}, which will be discussed in \autoref{ssec:extend_template}.
 
+
+Given an infographic (using SVG as an example), \gaia{} employs \aniclass{} to dictate the animation of its visual elements. An \aniclass{} is composed of several setting attributes and animation units, termed as \aniunit{}s within Gaia. A detailed exposition of these setting attributes can be found in \autoref{tab:setting}. 
+These attributes outline the foundational information for animation specification. Users have the flexibility to explicitly incorporate libraries and their custom animations using the "package" and "import" attributes, respectively. Animation configurations can be defined via the "name," "targetType," and "params" attributes. Furthermore, the "main" attribute signifies the starting point of the animation.
+
+
+%\autoref{fig:ani_spec}(A) shows an example of animation spec.
+%It contains 3 \aniunit{}s: Sync animation, Wipe animation of bars, and ZoomIn animation of the bar labels.
+%The animation created and the corresponding timeline are shown in \autoref{fig:ani_spec}(B).
+%To ease understanding, each attribute is associated with an attribute type given in \autoref{fig:ani_spec}(C).
+%Attribute \code{main} (line 5-19) defines the body of this animation, which contains a single \aniunit{}.
+%Other attributes of type \textit{Class} (line 2-4) address the reusability of \gaia{}, which will be discussed in \autoref{ssec:extend_template}.
+
+The example shown in \autoref{ssec:extend_template}. The ``main'' attributes (line 5-19) defines the body of this animation, which is a single \aniunit{} ``sync''. There are another two \aniunit{}s are defined into ``sync'' which are the Wipe animation of bars and the ZoomIn animation of labels.
 
 \begin{figure}[h]
   \centering

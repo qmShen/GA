@@ -1,44 +1,51 @@
 \section{Introduction}
 \label{sec:intro}
 
-%% infographics is useful
-%Infographics use a combination of graphics, text, images, and data to inform and engage.
-%In animated infographics, some elements are animated to illustrate data or emphasize key points more excitingly and engagingly.
-%% animated infographics are useful
-Animated infographics is considered a powerful tool for storytelling. 
+% infographics is useful
+Infographics use a combination of graphics, text, images, and data to inform and engage.
+In animated infographics, some elements are animated to illustrate data or emphasize key points more excitingly and engagingly.
+% animated infographics are useful
+The animation of infographics is considered a powerful tool for storytelling. 
 It has been widely used in multiple areas, such as business, publicity, science popularization and so on. 
 Compared to static infographics, it can interpret data or ideas more vividly and grabs the audience's attention quickly, appreciated and shared by people for years~\cite{blazer2019animated, brehmer2016timelines}. % [5, 10] in "Communicating with Motion: A Design Space for Animated Visual Narratives in Data Videos"
 
+% example
+% For instance, \autoref{fig:ani_example} illustrates a timeline and keyframes of an animated infographics video, which tries to explain the relationship between SAT score and family income.
+% In this animation, the chart framework enters at the beginning (A1) when the author explains this chart.
+% Different chart components will use different effects. For example, the lines use WipeIn effect while the x-label on the left use CutIn effect.
+% Following the narration, the bar and bar label for the category "less than \$20,000" enter (A2). A line and a label fade in to illustrate the average score (A3).
+% Then bars in the middle wipe in with a stagger (A4) in order to show a positive correlation.
+% Finally, the author introduces the data for "More than \$200,000" with similar effects on the corresponding bar and label (A5).
+% Such animated infographics make audiences easy to follow the narration and complex data facts can be explained intuitively, appreciated and shared by people for years.
+
 % introduce existing approaches and shortcomes
-%Unfortunately, the creation of animated infographics is tedious and time-consuming, especially for novice users~\cite{amini2016authoring, hullman2013deeper, shi2021communicating}. %[5 dataclip, 41, 80, in Katika]
-%It can take weeks to authorize graphical animation itself that lasts around one minute \cite{howlong}.
-%\qmhl{Creating animated inforgraphics from scratch involve two major steps: static inforgraphics designing and animation creating~\cite{jahanlou2020challenges, shi2021communicating}.}
-%Initially, designers need to create static infographics (like te rightmost figure in \autoref{fig:ani_example}(A)) using feature-rich software such as Adobe Illustrator~\cite{AdobeAI} and  export them as Scalable Vector Graphics (SVGs) or other kinds of files so that downstream tools can be employed for animation creation.
-%Then, the interactive tools (\eg Adobe After Effects~\cite{AdobeAE}) are used to add animations.
-%However, they only provide low-level operations, like keyframes or interpolation, for motion authoring, which requires expertise and is time-consuming \cite{jahanlou2020challenges}.
-%Some users might choose programming tools (\eg D3~\cite{bostock2011d3}) because they can precisely control property changes and organize timelines through program flow.
-%In recent years, declarative languages are preferred by designers for this task as they favor conciseness over expressiveness~\cite{mcnutt2023nogrammar}. 
-%Canis~\cite{ge2020canis} falls into this category, which provides a declarative language for creating animated charts.
-%These techniques simplify the creation process but can only use a predefined library of simple animations usually, which limits their usage.
-%Here, we introduce two examples to better illustrate the challenges of creating animated infographics with existing tools.
-
-Crafting animated infographics is tedious and time-consuming, particularly for novice users~\cite{amini2016authoring, hullman2013deeper, shi2021communicating}. The process to produce just one minute of graphical animation can span several weeks \cite{howlong}.
-The construction of animated infographics fundamentally comprises two primary stages: designing static infographics and creating animation~\cite{jahanlou2020challenges, shi2021communicating}. Initially, designers employ feature-rich software like Adobe Illustrator~\cite{AdobeAI} to craft static infographics (as exemplified by the rightmost figure in \autoref{fig:ani_example}(A)). Subsequently, these are exported as Scalable Vector Graphics (SVGs) or other file types to leverage downstream tools for animation. 
-In the following stage, interactive tools such as Adobe After Effects~\cite{AdobeAE} are utilized to create animations. However, these tools only offer low-level operations like keyframes or interpolation for motion authoring, which requires a significant degree of expertise and time \cite{jahanlou2020challenges}. \qmpr{ Some designers might gravitate towards programming tools like D3~\cite{bostock2011d3} for the precision they offer in controlling property changes and organizing timelines through program flow.}{What's the benefits and disadvantage of D3?}
-In recent years, designers have shown a preference for declarative languages due to their succinctness, even if it sometimes comes at the cost of expressiveness \cite{mcnutt2023nogrammar}. Canis \cite{ge2020canis} falls into this category, offering a declarative language tailored for crafting animated charts. 
-\qmpr{These techniques simplify the creation process but can only use a predefined library of simple animations usually, which limits their usage}{Failed to clearly introduce the limitation of Canis}.
-\qmhl{Here, we introduce two examples to better illustrate the challenges of creating animated infographics with existing tools.}
-
+Unfortunately, the creation of animated infographics is tedious and time-consuming, especially for novice users~\cite{amini2016authoring, hullman2013deeper, shi2021communicating}. %[5 dataclip, 41, 80, in Katika]
+It can take weeks to authorize graphical animation itself that lasts around one minute \cite{howlong}.
+% Cite these papers: “Recent works [5, 41, 80] illustrate how authoring a motion graphics video is a challenging task, and creating a minute-long video can take up to two days [71]”, in Katika
+% how to create it in AI/AE
+The creation process involves multiple separated steps \cite{jahanlou2020challenges, shi2021communicating}. %  [44, 80] in katika
+Initially, designers need to create static infographics (like the rightmost figure in \autoref{fig:ani_example}(A)) using feature-rich software such as Adobe Illustrator~\cite{AdobeAI}.
+Then they can export their infographics as Scalable Vector Graphics (SVGs) or other kinds of files so that downstream tools can be employed for animation creation.
+Interactive tools (\eg Adobe After Effects~\cite{AdobeAE}) are usually used for their expressiveness.
+However, they only provide low-level operations, like keyframes or interpolation, for motion authoring, which requires expertise and is time-consuming \cite{jahanlou2020challenges}.
+Some users might choose programming tools (\eg D3~\cite{bostock2011d3}) because they can precisely control property changes and organize timelines through program flow.
+In recent years, declarative languages are preferred by designers for this task as they favor conciseness over expressiveness~\cite{mcnutt2023nogrammar}. 
+Canis~\cite{ge2020canis} falls into this category, which provides a declarative language for creating animated charts.
+These techniques simplify the creation process but can only use a predefined library of simple animations usually, which limits their usage.
+Here, we introduce two examples to better illustrate the challenges of creating animated infographics with existing tools.
+% \textbf{Our goal} is to provide a framework that simplifies and accelerates the creation of attractive animated infographics greatly. 
+% Our approach is to develop a declarative language that enables users to declare animations intuitively and reuse them easily.
+% The animation engine with high-level specs as input can also be embedded in other tools.
 
 % Examples
 
-\begin{figure*}[h]
+\begin{figure}[h]
   \centering
-  \includegraphics[width=\linewidth]{figs/ani_example_tvcg.pdf}
+  \includegraphics[width=\linewidth]{figs/ani_example.pdf}
   \caption{(A) An animated infographic about the pretrial released defendants of the D.C. court in 2017 (retrieved from \url{https://youtu.be/5mhwDSHKEyM?t=215}). (B) An animated infographic about the relation between SAT score and family income (retrieved from \url{https://youtu.be/WjVVwMGJ9S8?t=334}). Similar animations are framed in blue. }
 %  \Description{(A) An animated infographic about the pretrial released defendants of the D.C. court in 2017. (B) An animated infographic about the relation between SAT score and family income. Similar animations are framed in blue.}
   \label{fig:ani_example}
-\end{figure*}
+\end{figure}
 
 \autoref{fig:ani_example}(A) illustrates four keyframes and the timeline of an animated.
 The creation process is as follows:
