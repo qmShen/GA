@@ -157,7 +157,7 @@ The library and reusability are the core of \gaia{}, as elaborated further in \a
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.9\linewidth]{figs/ani_unit_type.pdf}
+  \includegraphics[width=\linewidth]{figs/ani_unit_type.pdf}
   \caption{
     Examples for non-leaf \aniunit{}s (sync, concat, foreach, single-child) in \gaia{}.
   }
@@ -174,3 +174,93 @@ In the foreach animation, the elements in the parent selection are first grouped
 The single-child animation will simply apply the effect on its selection.
 It is useful when the inner animation is defined as a parameter.
 Except for the foreach animation, all other animations pass the parent selection to the child animation directly with transforming.
+
+\subsection{Tables}
+
+\begin{table}[]
+\resizebox{0.5\textwidth}{!}{
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Attribute} & \textbf{Example(s)}                                                & \textbf{Default} \\ \hline
+\code{target             }& \code{".Bar" / {[}\{"filter":".Bar"\}{]} / "\$strParam"                  }& \code{{[}{]}           }\\ \hline
+\code{groupBy            }& \code{"@data.value" / "\$strParam"                                       }& \code{                 }\\ \hline
+\code{duration           }& \code{1.0 / "\$numParam"                                                 }& \code{1                }\\ \hline
+\code{offset             }& \code{(same as above)                                                    }& \code{0                }\\ \hline
+\code{stagger            }& \code{(same as above)                                                    }& \code{0                }\\ \hline
+\code{yoyo               }& \code{true / \{"repeat":1,"delay":0.2\} / "\$boolParam"                  }& \code{FALSE            }\\ \hline
+\code{start              }& \code{"after prev" / "\$strParam"                                        }& \code{"with prev"      }\\ \hline
+\code{sync               }& \code{{[}\{"ref":"Fade","target":".Bar"\}{]} / {[}"\$aniUnitParam"{]}    }& \code{                 }\\ \hline
+\code{concat             }& \code{(same as above)                                                    }& \code{                 }\\ \hline
+\code{child              }& \code{\{"ref":"Fade","target":".Bar"\} / "\$aniUnitParam"                }& \code{                 }\\ \hline
+\code{foreach            }& \code{(same as above)                                                    }& \code{                 }\\ \hline
+\code{ref                }& \code{"Wipe" / "\$strParam"                                              }& \code{                 }\\ \hline
+\code{(params)           }& \code{"from": "bottom" / "paramName": "\$param"                          }& \code{                 }\\ \hline
+\code{package            }& \code{"gaia.common"                                                      }& \code{""               }\\ \hline
+\code{import             }& \code{"name" / {[}\{"module":"name","as":"alias"\}{]}                    }& \code{{[}{]}           }\\ \hline
+\code{name               }& \code{"ClassName"                                                        }& \code{"Main"           }\\ \hline
+\code{targetType         }& \code{"BarMark"                                                          }& \code{"Any"            }\\ \hline
+\code{params             }& \code{\{"numParam":1,"strParam":\{"type":"string"\}\}                    }& \code{\{\}             }\\ \hline
+\code{main               }& \code{\{"ref":"Fade",...\} / \{"sync":...\}                              }& \code{                 }\\ \hline
+\end{tabular}
+}
+\caption{All attributes}
+\end{table}
+
+\begin{table}[]
+\resizebox{0.5\textwidth}{!}{
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Attribute} & \textbf{Example(s)}                                                & \textbf{Default} \\ \hline
+\code{target             }& \code{".Bar" / {[}\{"filter":".Bar"\}{]} / "\$strParam"                  }& \code{{[}{]}           }\\ \hline
+\code{groupBy            }& \code{"@data.value" / "\$strParam"                                       }& \code{                 }\\ \hline
+\end{tabular}
+}
+\caption{Target}
+\end{table}
+
+\begin{table}[]
+\resizebox{0.5\textwidth}{!}{
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Attribute} & \textbf{Example(s)}                                                & \textbf{Default} \\ \hline
+\code{duration           }& \code{1.0 / "\$numParam"                                                 }& \code{1                }\\ \hline
+\code{offset             }& \code{(same as above)                                                    }& \code{0                }\\ \hline
+\code{stagger            }& \code{(same as above)                                                    }& \code{0                }\\ \hline
+\code{yoyo               }& \code{true / \{"repeat":1,"delay":0.2\} / "\$boolParam"                  }& \code{FALSE            }\\ \hline
+\code{start              }& \code{"after prev" / "\$strParam"                                        }& \code{"with prev"      }\\ \hline
+\end{tabular}
+}
+\caption{Timing}
+\end{table}
+
+\begin{table}[]
+\resizebox{0.5\textwidth}{!}{
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Attribute} & \textbf{Example(s)}                                                & \textbf{Default} \\ \hline
+\code{sync               }& \code{{[}\{"ref":"Fade","target":".Bar"\}{]} / {[}"\$aniUnitParam"{]}    }& \code{                 }\\ \hline
+\code{concat             }& \code{(same as above)                                                    }& \code{                 }\\ \hline
+\code{child              }& \code{\{"ref":"Fade","target":".Bar"\} / "\$aniUnitParam"                }& \code{                 }\\ \hline
+\code{foreach            }& \code{(same as above)                                                    }& \code{                 }\\ \hline
+\code{ref                }& \code{"Wipe" / "\$strParam"                                              }& \code{                 }\\ \hline
+\code{(params)           }& \code{"from": "bottom" / "paramName": "\$param"                          }& \code{                 }\\ \hline
+\end{tabular}
+}
+\caption{Effect}
+\end{table}
+
+\begin{table}[]
+\resizebox{0.5\textwidth}{!}{
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Attribute} & \textbf{Example(s)}                                                & \textbf{Default} \\ \hline
+\code{package            }& \code{"gaia.common"                                                      }& \code{""               }\\ \hline
+\code{import             }& \code{"name" / {[}\{"module":"name","as":"alias"\}{]}                    }& \code{{[}{]}           }\\ \hline
+\code{name               }& \code{"ClassName"                                                        }& \code{"Main"           }\\ \hline
+\code{targetType         }& \code{"BarMark"                                                          }& \code{"Any"            }\\ \hline
+\code{params             }& \code{\{"numParam":1,"strParam":\{"type":"string"\}\}                    }& \code{\{\}             }\\ \hline
+\code{main               }& \code{\{"ref":"Fade",...\} / \{"sync":...\}                              }& \code{                 }\\ \hline
+\end{tabular}
+}
+\caption{Template meta}
+\end{table}
