@@ -73,6 +73,9 @@
 \@writefile{brf}{\backcite{heer2010declarative}{{2}{2.1}{subsection.5}}}
 \@writefile{brf}{\backcite{liu2018data}{{2}{2.1}{subsection.5}}}
 \@writefile{brf}{\backcite{blazer2019animated, brehmer2016timelines}{{2}{2.1}{subsection.5}}}
+\@writefile{brf}{\backcite{wang2021animated, shi2021communicating}{{2}{2.1}{subsection.5}}}
+\@writefile{brf}{\backcite{wang2021animated}{{2}{2.1}{subsection.5}}}
+\@writefile{brf}{\backcite{shi2021communicating}{{2}{2.1}{subsection.5}}}
 \citation{jahanlou2022katika,howlong}
 \citation{AdobeAE}
 \citation{thompson2021data}
@@ -91,9 +94,6 @@
 \citation{ge2020canis,ge2021cast}
 \citation{gganimate}
 \citation{mcnutt2023nogrammar}
-\@writefile{brf}{\backcite{wang2021animated, shi2021communicating}{{3}{2.1}{subsection.5}}}
-\@writefile{brf}{\backcite{wang2021animated}{{3}{2.1}{subsection.5}}}
-\@writefile{brf}{\backcite{shi2021communicating}{{3}{2.1}{subsection.5}}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Visual Animation Authoring Tools}{3}{subsection.6}\protected@file@percent }
 \@writefile{brf}{\backcite{jahanlou2022katika, howlong}{{3}{2.2}{subsection.6}}}
 \@writefile{brf}{\backcite{AdobeAE}{{3}{2.2}{subsection.6}}}
@@ -120,12 +120,13 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Animation Specification}{3}{subsection.9}\protected@file@percent }
 \newlabel{ssec:aniclass_aniunit}{{3.1}{3}{Animation Specification}{subsection.9}{}}
 \newlabel{ssec:aniclass_aniunit@cref}{{[subsection][1][3]3.1}{[1][3][]3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces  (A) An example of {\textsc  {Gaia}}{} animation spec, {\it  i.e.,\ }{\textit  {AniClass}}{}, designed for BarMark. It contains 3 {\textit  {AniUnit}}{}s. (B) An animated instance and timeline of the animation created by this spec. {\textit  {AniUnit}}{}s form a tree hierarchy and each animation selects targets from the parent. (C) All keywords used in {\textsc  {Gaia}}{} animation spec and examples. \relax }}{3}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:ani_spec}{{2}{3}{(A) An example of \gaia {} animation spec, \ie \aniclass {}, designed for BarMark. It contains 3 \aniunit {}s. (B) An animated instance and timeline of the animation created by this spec. \aniunit {}s form a tree hierarchy and each animation selects targets from the parent. (C) All keywords used in \gaia {} animation spec and examples. \relax }{figure.caption.10}{}}
+\newlabel{fig:ani_spec@cref}{{[figure][2][]2}{[1][3][]3}}
 \citation{bostock2011d3}
 \citation{shi2021communicating}
 \citation{ge2020canis}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces  (A) An example of {\textsc  {Gaia}}{} animation spec, {\it  i.e.,\ }{\textit  {AniClass}}{}, designed for BarMark. It contains 3 {\textit  {AniUnit}}{}s. (B) An animated instance and timeline of the animation created by this spec. {\textit  {AniUnit}}{}s form a tree hierarchy and each animation selects targets from the parent. (C) All keywords used in {\textsc  {Gaia}}{} animation spec and examples. \relax }}{4}{figure.caption.10}\protected@file@percent }
-\newlabel{fig:ani_spec}{{2}{4}{(A) An example of \gaia {} animation spec, \ie \aniclass {}, designed for BarMark. It contains 3 \aniunit {}s. (B) An animated instance and timeline of the animation created by this spec. \aniunit {}s form a tree hierarchy and each animation selects targets from the parent. (C) All keywords used in \gaia {} animation spec and examples. \relax }{figure.caption.10}{}}
-\newlabel{fig:ani_spec@cref}{{[figure][2][]2}{[1][3][]4}}
+\citation{thompson2020understanding}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Target and Target Selection}{4}{subsection.11}\protected@file@percent }
 \newlabel{ssec:gaia_ani_target}{{3.2}{4}{Target and Target Selection}{subsection.11}{}}
 \newlabel{ssec:gaia_ani_target@cref}{{[subsection][2][3]3.2}{[1][4][]4}}
@@ -144,13 +145,12 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces  Examples for non-leaf {\textit  {AniUnit}}{}s (sync, concat, foreach, single-child) in {\textsc  {Gaia}}{}. \relax }}{4}{figure.caption.15}\protected@file@percent }
 \newlabel{fig:ani_unit_type}{{4}{4}{Examples for non-leaf \aniunit {}s (sync, concat, foreach, single-child) in \gaia {}. \relax }{figure.caption.15}{}}
 \newlabel{fig:ani_unit_type@cref}{{[figure][4][]4}{[1][4][]4}}
-\citation{thompson2020understanding}
 \citation{satyanarayan2015reactive}
 \citation{kim2020gemini}
 \citation{json-schema-org}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Reusability and Extensibility}{5}{section.16}\protected@file@percent }
 \newlabel{sec:gaia_reuse}{{4}{5}{Reusability and Extensibility}{section.16}{}}
-\newlabel{sec:gaia_reuse@cref}{{[section][4][]4}{[1][5][]5}}
+\newlabel{sec:gaia_reuse@cref}{{[section][4][]4}{[1][4][]5}}
 \@writefile{brf}{\backcite{thompson2020understanding}{{5}{4}{section.16}}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Target Abstraction and Reusing}{5}{subsection.17}\protected@file@percent }
 \newlabel{sec:target_type}{{4.1}{5}{Target Abstraction and Reusing}{subsection.17}{}}
@@ -175,7 +175,7 @@
 \newlabel{ssec:extend_template@cref}{{[subsection][4][4]4.4}{[1][5][]5}}
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces An example of using animation spec as a template to declare and instantiate a complex animation.\relax }}{6}{figure.caption.23}\protected@file@percent }
 \newlabel{fig:ani_hierarchy}{{7}{6}{An example of using animation spec as a template to declare and instantiate a complex animation.\relax }{figure.caption.23}{}}
-\newlabel{fig:ani_hierarchy@cref}{{[figure][7][]7}{[1][6][]6}}
+\newlabel{fig:ani_hierarchy@cref}{{[figure][7][]7}{[1][5][]6}}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Workflow and {\textsc  {Gaia}}{} Compiler}{6}{section.24}\protected@file@percent }
 \newlabel{sec:workflow}{{5}{6}{Workflow and \gaia {} Compiler}{section.24}{}}
 \newlabel{sec:workflow@cref}{{[section][5][]5}{[1][6][]6}}
@@ -190,24 +190,25 @@
 \citation{cheng2022investigating}
 \@writefile{toc}{\contentsline {section}{\numberline {6}Evaluation}{7}{section.31}\protected@file@percent }
 \newlabel{sec:eval}{{6}{7}{Evaluation}{section.31}{}}
-\newlabel{sec:eval@cref}{{[section][6][]6}{[1][7][]7}}
+\newlabel{sec:eval@cref}{{[section][6][]6}{[1][6][]7}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Example Gallery}{7}{subsection.33}\protected@file@percent }
 \@writefile{brf}{\backcite{ge2020canis,wang2021animated, cui2021mixed}{{7}{6.1}{subsection.33}}}
 \@writefile{brf}{\backcite{cheng2022investigating}{{7}{6.1}{subsection.33}}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {6.2}User Study}{7}{subsection.35}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.1}Study Design}{7}{subsubsection.36}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces User evaluations of primary features of {\textsc  {Gaia}}{} using a 5-point Likert scale.\relax }}{7}{figure.caption.39}\protected@file@percent }
+\newlabel{fig:user_ratings.pdf}{{9}{7}{User evaluations of primary features of \gaia {} using a 5-point Likert scale.\relax }{figure.caption.39}{}}
+\newlabel{fig:user_ratings.pdf@cref}{{[figure][9][]9}{[1][7][]7}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {6.2.2}Results}{7}{subsubsection.38}\protected@file@percent }
 \newlabel{ssec:user_study_result}{{6.2.2}{7}{Results}{subsubsection.38}{}}
 \newlabel{ssec:user_study_result@cref}{{[subsubsection][2][6,2]6.2.2}{[1][7][]7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces User evaluations of primary features of {\textsc  {Gaia}}{} using a 5-point Likert scale.\relax }}{8}{figure.caption.39}\protected@file@percent }
-\newlabel{fig:user_ratings.pdf}{{9}{8}{User evaluations of primary features of \gaia {} using a 5-point Likert scale.\relax }{figure.caption.39}{}}
-\newlabel{fig:user_ratings.pdf@cref}{{[figure][9][]9}{[1][7][]8}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Expert Interview}{8}{subsection.40}\protected@file@percent }
 \newlabel{ssec:expert_interview}{{6.3}{8}{Expert Interview}{subsection.40}{}}
 \newlabel{ssec:expert_interview@cref}{{[subsection][3][6]6.3}{[1][8][]8}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.1}Existing and Potential Usage Scenarios}{8}{subsubsection.41}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.2}Expressiveness and Learning Curve}{8}{subsubsection.42}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.3}Template Usage}{8}{subsubsection.43}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.4}Extensibility}{8}{subsubsection.44}\protected@file@percent }
 \citation{blackwell2001cognitive}
 \citation{satyanarayan2015reactive}
 \bibstyle{abbrv-doi-hyperref}
@@ -216,7 +217,13 @@
 \bibcite{AdobeAI}{2}
 \bibcite{howlong}{3}
 \bibcite{flourish}{4}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.4}Extensibility}{9}{subsubsection.44}\protected@file@percent }
+\bibcite{gganimate}{5}
+\bibcite{json-schema-org}{6}
+\bibcite{msppt}{7}
+\bibcite{processing}{8}
+\bibcite{amini2016authoring}{9}
+\bibcite{bateman2010useful}{10}
+\bibcite{blackwell2001cognitive}{11}
 \@writefile{toc}{\contentsline {section}{\numberline {7}Discussion}{9}{section.45}\protected@file@percent }
 \newlabel{sec:discuss}{{7}{9}{Discussion}{section.45}{}}
 \newlabel{sec:discuss@cref}{{[section][7][]7}{[1][9][]9}}
@@ -230,13 +237,6 @@
 \@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{9}{section.51}\protected@file@percent }
 \newlabel{sec:conclusion}{{8}{9}{Conclusion}{section.51}{}}
 \newlabel{sec:conclusion@cref}{{[section][8][]8}{[1][9][]9}}
-\bibcite{gganimate}{5}
-\bibcite{json-schema-org}{6}
-\bibcite{msppt}{7}
-\bibcite{processing}{8}
-\bibcite{amini2016authoring}{9}
-\bibcite{bateman2010useful}{10}
-\bibcite{blackwell2001cognitive}{11}
 \bibcite{blazer2019animated}{12}
 \bibcite{borkin2013makes}{13}
 \bibcite{bostock2011d3}{14}
