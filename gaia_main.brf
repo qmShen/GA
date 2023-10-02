@@ -5,7 +5,6 @@
 \backcite {AdobeAI}{{1}{1}{section.1}}
 \backcite {AdobeAE}{{1}{1}{section.1}}
 \backcite {jahanlou2020challenges}{{1}{1}{section.1}}
-\backcite {bostock2011d3}{{1}{1}{section.1}}
 \backcite {mcnutt2023nogrammar}{{1}{1}{section.1}}
 \backcite {ge2020canis}{{1}{1}{section.1}}
 \backcite {krasner2013motion, sarinastiti2016skill}{{1}{1}{figure.caption.2}}
@@ -24,11 +23,11 @@
 \backcite {wang2021animated, shi2021communicating}{{2}{2.1}{subsection.5}}
 \backcite {wang2021animated}{{2}{2.1}{subsection.5}}
 \backcite {shi2021communicating}{{2}{2.1}{subsection.5}}
-\backcite {jahanlou2022katika, howlong}{{3}{2.2}{subsection.6}}
-\backcite {AdobeAE}{{3}{2.2}{subsection.6}}
-\backcite {thompson2021data}{{3}{2.2}{subsection.6}}
-\backcite {msppt}{{3}{2.2}{subsection.6}}
-\backcite {amini2016authoring}{{3}{2.2}{subsection.6}}
+\backcite {jahanlou2022katika, howlong}{{2}{2.2}{subsection.6}}
+\backcite {AdobeAE}{{2}{2.2}{subsection.6}}
+\backcite {thompson2021data}{{2}{2.2}{subsection.6}}
+\backcite {msppt}{{2}{2.2}{subsection.6}}
+\backcite {amini2016authoring}{{2}{2.2}{subsection.6}}
 \backcite {flourish}{{3}{2.2}{subsection.6}}
 \backcite {shen2023dataplayer}{{3}{2.2}{subsection.6}}
 \backcite {jahanlou2022katika}{{3}{2.2}{subsection.6}}
@@ -42,14 +41,14 @@
 \backcite {ge2020canis, ge2021cast}{{3}{2.3}{subsection.7}}
 \backcite {gganimate}{{3}{2.3}{subsection.7}}
 \backcite {mcnutt2023nogrammar}{{3}{2.3}{subsection.7}}
-\backcite {bostock2011d3}{{4}{3.2}{figure.caption.12}}
-\backcite {shi2021communicating}{{4}{3.3}{subsection.13}}
-\backcite {ge2020canis}{{4}{3.3}{subsection.13}}
-\backcite {thompson2020understanding}{{5}{4}{section.16}}
-\backcite {satyanarayan2015reactive}{{5}{4.1}{subsection.17}}
-\backcite {kim2020gemini}{{5}{4.1}{subsection.17}}
-\backcite {json-schema-org}{{5}{4.2}{subsection.19}}
-\backcite {ge2020canis,wang2021animated, cui2021mixed}{{7}{6.1}{subsection.33}}
-\backcite {cheng2022investigating}{{7}{6.1}{subsection.33}}
-\backcite {blackwell2001cognitive}{{9}{7.1}{subsection.46}}
-\backcite {satyanarayan2015reactive}{{9}{7.4}{subsection.49}}
+\backcite {bostock2011d3}{{4}{3.2}{figure.caption.14}}
+\backcite {shi2021communicating}{{4}{3.3}{table.caption.16}}
+\backcite {ge2020canis}{{4}{3.3}{table.caption.16}}
+\backcite {thompson2020understanding}{{5}{4}{section.20}}
+\backcite {satyanarayan2015reactive}{{5}{4.1}{subsection.21}}
+\backcite {kim2020gemini}{{5}{4.1}{subsection.21}}
+\backcite {json-schema-org}{{5}{4.2}{subsection.23}}
+\backcite {ge2020canis,wang2021animated, cui2021mixed}{{7}{6.1}{subsection.37}}
+\backcite {cheng2022investigating}{{7}{6.1}{subsection.37}}
+\backcite {blackwell2001cognitive}{{9}{7.1}{subsection.50}}
+\backcite {satyanarayan2015reactive}{{9}{7.4}{subsection.53}}

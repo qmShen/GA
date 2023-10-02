@@ -28,6 +28,24 @@ The numbers shown on the bars are appeared through a zooming effect between 0.5s
 \subsection{Animation Specification}
 \label{ssec:aniclass_aniunit}
 
+\begin{table}[]
+	\caption{Setting attributes}
+	\vspace{-3mm}
+	\resizebox{0.5\textwidth}{!}{
+		\begin{tabular}{|l|l|l|}
+			\hline
+			\textbf{Attribute} & \textbf{Example(s)}                                                & \textbf{Default} \\ \hline
+			\code{package            }& \code{"gaia.common"                                                      }& \code{""               }\\ \hline
+			\code{import             }& \code{"name" / {[}\{"module":"name","as":"alias"\}{]}                    }& \code{{[}{]}           }\\ \hline
+			\code{name               }& \code{"ClassName"                                                        }& \code{"Main"           }\\ \hline
+			\code{targetType         }& \code{"BarMark"                                                          }& \code{"Any"            }\\ \hline
+			\code{params             }& \code{\{"numParam":1,"strParam":\{"type":"string"\}\}                    }& \code{\{\}             }\\ \hline
+			\code{main               }& \code{\{"ref":"Fade",...\} / \{"sync":...\}                              }& \code{                 }\\ \hline
+		\end{tabular} 
+	}
+	\label{tab:setting}
+	\vspace{-5mm}
+\end{table} 
 %A \gaia{} animation spec (as we called \aniclass{}) describes the animation applied on a given infographic with several animation units (as we called \aniunit{}) and a set of setting attributes.
 %\autoref{fig:ani_spec}(A) shows an example of animation spec.
 %It contains 3 \aniunit{}s: Sync animation, Wipe animation of bars, and ZoomIn animation of the bar labels.
@@ -56,15 +74,27 @@ These attributes outline the foundational information for animation specificatio
 %Attribute \code{main} (line 5-19) defines the body of this animation, which contains a single \aniunit{}.
 %Other attributes of type \textit{Class} (line 2-4) address the reusability of \gaia{}, which will be discussed in \autoref{ssec:extend_template}.
 
-The example shown in \autoref{ssec:extend_template}. The ``main'' attributes (line 5-19) defines the body of this animation, which is a single \aniunit{} ``sync''. There are another two \aniunit{}s are defined into ``sync'' which are the Wipe animation of bars and the ZoomIn animation of labels.
+The example shown in \autoref{fig:ani_spec}. The ``main'' attributes (line 5-19) defines the body of this animation, which is a single \aniunit{} ``sync''. There are another two \aniunit{}s are defined into ``sync'' which are the Wipe animation of bars and the ZoomIn animation of labels.
+%
+%\begin{figure}[h]
+%  \centering
+%  \includegraphics[width=\linewidth]{figs/ani_spec.pdf}
+%  \caption{
+%  (A) An example of \gaia{} animation spec, \ie \aniclass{}, designed for BarMark. It contains 3 \aniunit{}s. 
+%  (B) An animated instance and timeline of the animation created by this spec. \aniunit{}s form a tree hierarchy and each animation selects targets from the parent. 
+%  (C) All keywords used in \gaia{} animation spec and examples. }
+%%  \Description{(A) An example of \gaia{} animation spec, \ie \aniclass{}, designed for BarMark. It contains 3 \aniunit{}s. 
+%%  (B) An animated instance and timeline of the animation created by this spec. \aniunit{}s form a tree hierarchy and each animation selects targets from the parent. 
+%%  (C) All keywords used in \gaia{} animation spec and examples. }
+%  \label{fig:ani_spec}
+%\end{figure}
 
+%
 \begin{figure}[h]
   \centering
-  \includegraphics[width=\linewidth]{figs/ani_spec.pdf}
+  \includegraphics[width=\linewidth]{figs/ani_spec_ex_in_method.pdf}
   \caption{
-  (A) An example of \gaia{} animation spec, \ie \aniclass{}, designed for BarMark. It contains 3 \aniunit{}s. 
-  (B) An animated instance and timeline of the animation created by this spec. \aniunit{}s form a tree hierarchy and each animation selects targets from the parent. 
-  (C) All keywords used in \gaia{} animation spec and examples. }
+  An example of \gaia{} animation specification. }																																																																																																																																																																																																																																																																																														
 %  \Description{(A) An example of \gaia{} animation spec, \ie \aniclass{}, designed for BarMark. It contains 3 \aniunit{}s. 
 %  (B) An animated instance and timeline of the animation created by this spec. \aniunit{}s form a tree hierarchy and each animation selects targets from the parent. 
 %  (C) All keywords used in \gaia{} animation spec and examples. }
@@ -90,6 +120,22 @@ Strings started with symbol \code{\$} are placeholders for parameters, which wil
 
 \subsection{Target and Target Selection}
 \label{ssec:gaia_ani_target}
+
+
+\begin{table}[]
+	\caption{Target attributes}
+	\vspace{-3mm}
+	\resizebox{0.5\textwidth}{!}{
+		\begin{tabular}{|l|l|l|}
+			\hline
+			\textbf{Attribute} & \textbf{Example(s)}                                                & \textbf{Default} \\ \hline
+			\code{target             }& \code{".Bar" / {[}\{"filter":".Bar"\}{]} / "\$strParam"                  }& \code{{[}{]}           }\\ \hline
+			\code{groupBy            }& \code{"@data.value" / "\$strParam"                                       }& \code{                 }\\ \hline
+		\end{tabular}
+	}
+	\label{tab:target}
+	\vspace{-5mm}
+\end{table}
 
 % Target attribute declared the animated target of \aniunit{}s. 
 % Before introducing how target selection works in \gaia{}, we need to formulate the data structure of animated targets.
@@ -161,8 +207,24 @@ When using expressions, \gaia{} allows users to visit several properties of elem
 
 \subsection{Timing}
 \label{ssec:gaia_ani_timing}
-
-As listed in \autoref{fig:ani_spec}(C), Timing encompasses 5 attributes: duration, offset, yoyo, stagger, and start.
+\begin{table}[]
+	\caption{Timing attributes}
+	\vspace{-3mm}
+	\resizebox{0.5\textwidth}{!}{
+		\begin{tabular}{|l|l|l|}
+			\hline
+			\textbf{Attribute} & \textbf{Example(s)}                                                & \textbf{Default} \\ \hline
+			\code{duration           }& \code{1.0 / "\$numParam"                                                 }& \code{1                }\\ \hline
+			\code{offset             }& \code{(same as above)                                                    }& \code{0                }\\ \hline
+			\code{stagger            }& \code{(same as above)                                                    }& \code{0                }\\ \hline
+			\code{yoyo               }& \code{true / \{"repeat":1,"delay":0.2\} / "\$boolParam"                  }& \code{FALSE            }\\ \hline
+			\code{start              }& \code{"after prev" / "\$strParam"                                        }& \code{"with prev"      }\\ \hline
+		\end{tabular}
+	}
+	\label{tab:timming}
+	\vspace{-1mm}
+\end{table}
+As listed in \autoref{tab:timming}, Timing encompasses 5 attributes: duration, offset, yoyo, stagger, and start.
 These attributes govern the timing settings of an \aniunit{}.
 Offset is used by the parent animation (\eg sync or concat) to introduce a time delay.
 Yoyo enables the implementation of emphasizing animations (\eg blink, highlight, \etcns) by specifying the number of repeats and the delay between each repetition.
@@ -182,6 +244,26 @@ In \gaia{}, each animation has 4 timing settings:
 \subsection{Effect and Parameters}
 \label{ssec:gaia_ani_effect}
 
+
+\begin{table}[]
+	\caption{Effect attributes}
+	\vspace{-3mm}
+	\resizebox{0.5\textwidth}{!}{
+		\begin{tabular}{|l|l|l|}
+			\hline
+			\textbf{Attribute} & \textbf{Example(s)}                                                 \\ \hline
+			\code{sync               }& \code{{[}\{"ref":"Fade","target":".Bar"\}{]} / {[}"\$aniUnitParam"{]}    }\\ \hline
+			\code{concat             }& \code{(same as above)                                                    }\\ \hline
+			\code{child              }& \code{\{"ref":"Fade","target":".Bar"\} / "\$aniUnitParam"                }\\ \hline
+			\code{foreach            }& \code{(same as above)                                                    }\\ \hline
+			\code{ref                }& \code{"Wipe" / "\$strParam"                                              }\\ \hline
+			\code{(params)           }& \code{"from": "bottom" / "paramName": "\$param"                          }\\ \hline
+		\end{tabular}
+	}
+	\label{tab:effect}
+	\vspace{-5mm}
+\end{table}
+
 Attributes of type \textit{Effect} include all effect-related settings.
 In fact, all animation effects can be specified by an animation type identifier along with a set of animation parameters.
 For instance, in \autoref{fig:ani_spec}(A), the Wipe animation (lines 7-12) is invoked using the value of \code{ref} with \code{from} serving as the parameter passed to it. 
@@ -195,7 +277,7 @@ The library and reusability are the core of \gaia{}, as elaborated further in \a
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.9\linewidth]{figs/ani_unit_type.pdf}
+  \includegraphics[width=0.95\linewidth]{figs/ani_unit_type.pdf}
   \caption{
     Examples for non-leaf \aniunit{}s (sync, concat, foreach, single-child) in \gaia{}.
   }

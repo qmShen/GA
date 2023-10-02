@@ -24,10 +24,11 @@ Compared to static infographics, it can interpret data or ideas more vividly and
 
 Crafting animated infographics is tedious and time-consuming, particularly for novice users~\cite{amini2016authoring, hullman2013deeper, shi2021communicating}. The process to produce just one minute of graphical animation can span several weeks \cite{howlong}.
 The construction of animated infographics fundamentally comprises two primary stages: designing static infographics and creating animation~\cite{jahanlou2020challenges, shi2021communicating}. Initially, designers employ feature-rich software like Adobe Illustrator~\cite{AdobeAI} to craft static infographics (as exemplified by the rightmost figure in \autoref{fig:ani_example}(A)). Subsequently, these are exported as Scalable Vector Graphics (SVGs) or other file types to leverage downstream tools for animation. 
-In the following stage, interactive tools such as Adobe After Effects~\cite{AdobeAE} are utilized to create animations. However, these tools only offer low-level operations like keyframes or interpolation for motion authoring, which requires a significant degree of expertise and time \cite{jahanlou2020challenges}. \qmpr{ Some designers might gravitate towards programming tools like D3~\cite{bostock2011d3} for the precision they offer in controlling property changes and organizing timelines through program flow.}{What's the benefits and disadvantage of D3?}
+In the following stage, interactive tools such as Adobe After Effects~\cite{AdobeAE} are utilized to create animations. However, these tools only offer low-level operations like keyframes or interpolation for motion authoring, which requires a significant degree of expertise and time \cite{jahanlou2020challenges}. 
+%\qmpr{ Some designers might gravitate towards programming tools like D3~\cite{bostock2011d3} for the precision they offer in controlling property changes and organizing timelines through program flow.}{What's the benefits and disadvantage of D3?}
 In recent years, designers have shown a preference for declarative languages due to their succinctness, even if it sometimes comes at the cost of expressiveness \cite{mcnutt2023nogrammar}. Canis \cite{ge2020canis} falls into this category, offering a declarative language tailored for crafting animated charts. 
 \qmpr{These techniques simplify the creation process but can only use a predefined library of simple animations usually, which limits their usage}{Failed to clearly introduce the limitation of Canis}.
-\qmhl{Here, we introduce two examples to better illustrate the challenges of creating animated infographics with existing tools.}
+%\qmhl{Here, we introduce two examples to better illustrate the challenges of creating animated infographics with existing tools.}
 
 
 % Examples
@@ -40,17 +41,17 @@ In recent years, designers have shown a preference for declarative languages due
   \label{fig:ani_example}
 \end{figure*}
 
-\autoref{fig:ani_example}(A) illustrates four keyframes and the timeline of an animated.
-The creation process is as follows:
-% A1
-To implement the CutIn effect in A1, each element needs to be masked separately.
-In A1, the y coordinates of title texts should be set at the start/end keyframe to let them move out from the masks.
-% A2-3
-Then following the narration, three similar animation groups are created at the corresponding timestamp (A2-4).
-In each group, the bar enters using a Wipe effect (the mask is also required) and texts of the axis and the bar enter using CutIn.
-The relative offsets, durations and easing functions for each animation are carefully set to produce a harmonious result.
+%\autoref{fig:ani_example}(A) illustrates four keyframes and the timeline of an animated.
+%The creation process is as follows:
+%% A1
+%To implement the CutIn effect in A1, each element needs to be masked separately.
+%In A1, the y coordinates of title texts should be set at the start/end keyframe to let them move out from the masks.
+%% A2-3
+%Then following the narration, three similar animation groups are created at the corresponding timestamp (A2-4).
+%In each group, the bar enters using a Wipe effect (the mask is also required) and texts of the axis and the bar enter using CutIn.
+%The relative offsets, durations and easing functions for each animation are carefully set to produce a harmonious result.
 
-A more complex example is shown in \autoref{fig:ani_example}(B). 
+An example is shown in \autoref{fig:ani_example}(B). 
 Given a static SVG shown as the rightmost figure in \autoref{fig:ani_example}(B), five animations are added (B1-5).
 First, the chart framework enters at the beginning (B1) when the author explains this chart.
 Similarly, animations for each element should be handled one by one, using different effects depending on the element. 
